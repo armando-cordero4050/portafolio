@@ -73,14 +73,22 @@
     <div class="fixed top-6 left-0 right-0 z-50 flex justify-center px-4">
         <nav class="glass-nav rounded-full px-8 py-4 flex items-center justify-between gap-8 xs:gap-12 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
             <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
-                <!-- Logo Image Placeholder -->
-                <img src="img/sit_logo.png" alt="SIT Logo" class="h-10 w-auto object-contain filter drop-shadow-sm">
+                <!-- SIT Premium Logo (Sincronizado) -->
+                <div class="h-10 w-10 bg-white rounded-lg flex items-center justify-center shadow-md border-2 border-primary relative">
+                    <span class="font-black text-xs text-primary tracking-tighter" style="font-family: 'Inter', sans-serif;">SIT</span>
+                    <div class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-secondary rounded-full border-2 border-white"></div>
+                </div>
+                <span class="text-sm font-black text-slate-800 tracking-tighter">SIT</span>
             </div>
             <div class="hidden md:flex items-center gap-8">
                 <a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors hover:scale-105 transform duration-200" href="#hero">Inicio</a>
                 <a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors hover:scale-105 transform duration-200" href="#banca">Banca</a>
                 <a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors hover:scale-105 transform duration-200" href="#partner">Valor Partner</a>
                 <a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors hover:scale-105 transform duration-200" href="#productos">Soluciones</a>
+                <a class="text-sm font-semibold text-primary/80 hover:text-primary transition-colors hover:scale-105 transform duration-200 flex items-center gap-1" href="/presentacion">
+                    <span class="material-symbols-outlined text-lg">present_to_all</span>
+                    Presentación
+                </a>
             </div>
             <button class="bg-primary hover:bg-blue-700 text-white px-6 py-2.5 rounded-full text-xs font-bold transition-all shadow-lg hover:shadow-blue-500/30 transform hover:-translate-y-0.5 border border-blue-400/20">
                 Contactar
