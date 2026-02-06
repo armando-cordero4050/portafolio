@@ -138,15 +138,7 @@
     <canvas id="particle-canvas"></canvas>
 
     <!-- Navigation Overlay -->
-    <div id="fixed-nav-logo" class="fixed top-6 left-6 z-50 transition-opacity duration-500 opacity-0">
-        <div class="flex items-center gap-3">
-            <!-- SIT Logo (Consistent with Hero) -->
-            <div class="h-14 w-14 bg-white rounded-xl flex items-center justify-center shadow-lg border-2 border-primary relative">
-                <span class="font-black text-xl text-primary tracking-tighter" style="font-family: 'Inter', sans-serif;">SIT</span>
-                <div class="absolute -top-1 -right-1 w-3 h-3 bg-secondary rounded-full border-2 border-white"></div>
-            </div>
-        </div>
-    </div>
+
 
     <!-- Scroll Controls (Crystal Effect) -->
     <div class="fixed bottom-8 right-8 z-50 flex flex-col gap-3">
@@ -383,19 +375,42 @@
         <!-- Slide 2.5: Tecnología de Punta y Entregables Estratégicos -->
         <section class="h-screen w-full snap-center relative flex items-center bg-white text-slate-800 overflow-hidden">
             <div class="w-full h-full grid grid-cols-1 lg:grid-cols-2">
-                <!-- Left: Visual Content (crm.png) -->
-                <div class="relative h-full w-full order-last lg:order-first bg-slate-50 flex items-center justify-center p-8 lg:p-20">
-                    <div class="relative perspective-[1000px] w-full max-w-2xl">
+                <!-- Left: Visual Content (crm.png) y Entregables Clave -->
+                <div class="relative h-full w-full order-last lg:order-first bg-slate-50 flex flex-col items-center justify-center p-8 lg:p-20">
+                    <div class="relative perspective-[1000px] w-full max-w-2xl mb-12">
                         <img src="img/crm.png" alt="CRM System" class="rounded-2xl shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)] border border-slate-200 transform lg:-rotate-2 hover:rotate-0 transition-transform duration-700 w-full h-auto object-contain">
+                    </div>
+
+                    <!-- Entregables Clave (Movidos aquí según solicitud) -->
+                    <div class="w-full max-w-xl pt-8 border-t border-slate-200">
+                        <h3 class="text-xs font-black uppercase text-slate-400 tracking-widest mb-6">Entregables Clave</h3>
+                        <div class="grid grid-cols-3 gap-6">
+                            <div class="flex flex-col items-center text-center gap-2">
+                                <div class="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-indigo-600/30">
+                                    <span class="material-symbols-outlined text-2xl">dashboard</span>
+                                </div>
+                                <span class="text-[10px] font-bold text-slate-800 uppercase tracking-tighter leading-tight text-center">Dashboards<br>Ejecutivos</span>
+                            </div>
+                            <div class="flex flex-col items-center text-center gap-2">
+                                <div class="w-12 h-12 bg-emerald-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-emerald-600/30">
+                                    <span class="material-symbols-outlined text-2xl">table_view</span>
+                                </div>
+                                <span class="text-[10px] font-bold text-slate-800 uppercase tracking-tighter leading-tight text-center">Reportes<br>Excel</span>
+                            </div>
+                            <div class="flex flex-col items-center text-center gap-2">
+                                <div class="w-12 h-12 bg-rose-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-rose-500/30">
+                                    <span class="material-symbols-outlined text-2xl">verified</span>
+                                </div>
+                                <span class="text-[10px] font-bold text-slate-800 uppercase tracking-tighter leading-tight text-center">Dictamen<br>Técnico</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Right: Text Content -->
                 <div class="flex flex-col justify-center px-12 lg:pr-24 lg:pl-16 relative z-20 order-first lg:order-last">
                     <div class="slide-content">
-                        <div class="mb-8">
-                            <img src="img/sit_logo.jpg" class="h-12 w-auto shadow-sm" alt="SIT Logo">
-                        </div>
+
 
                         <h2 class="text-4xl lg:text-5xl font-black text-slate-900 mb-6 leading-tight tracking-tight">
                             Tecnología de Punta y <br>Entregables Estratégicos
@@ -427,29 +442,7 @@
                             </div>
                         </div>
 
-                        <div class="pt-8 border-t border-slate-100">
-                            <h3 class="text-xs font-black uppercase text-slate-400 tracking-widest mb-6">Entregables Clave</h3>
-                            <div class="grid grid-cols-3 gap-6">
-                                <div class="flex flex-col items-center text-center gap-2">
-                                    <div class="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-indigo-600/30">
-                                        <span class="material-symbols-outlined text-2xl">dashboard</span>
-                                    </div>
-                                    <span class="text-[10px] font-bold text-slate-800 uppercase tracking-tighter leading-tight text-center">Dashboards<br>Ejecutivos</span>
-                                </div>
-                                <div class="flex flex-col items-center text-center gap-2">
-                                    <div class="w-12 h-12 bg-emerald-600 rounded-xl flex items-center justify-center text-white shadow-lg shadow-emerald-600/30">
-                                        <span class="material-symbols-outlined text-2xl">table_view</span>
-                                    </div>
-                                    <span class="text-[10px] font-bold text-slate-800 uppercase tracking-tighter leading-tight text-center">Reportes<br>Excel</span>
-                                </div>
-                                <div class="flex flex-col items-center text-center gap-2">
-                                    <div class="w-12 h-12 bg-rose-500 rounded-xl flex items-center justify-center text-white shadow-lg shadow-rose-500/30">
-                                        <span class="material-symbols-outlined text-2xl">verified</span>
-                                    </div>
-                                    <span class="text-[10px] font-bold text-slate-800 uppercase tracking-tighter leading-tight text-center text-center">Dictamen<br>Técnico</span>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -1167,13 +1160,21 @@
 
             <div class="slide-content z-10 text-center flex flex-col items-center gap-12">
                 <!-- Logos -->
-                <div class="flex flex-col md:flex-row items-center gap-8 md:gap-16">
-                    <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:scale-105 transition-transform duration-500">
-                        <img src="img/sit_logo.jpg" class="h-20 w-auto mix-blend-screen filter brightness-110 contrast-125" alt="SIT Logo">
+                <div class="flex flex-col md:flex-row items-center gap-12 md:gap-24 animate-fade-in-up">
+                    <!-- SIT Premium Logo GIGANTE (Estilo Brand Pill sincronizado) -->
+                    <div class="relative group">
+                        <div class="h-56 w-56 bg-white rounded-[3rem] flex items-center justify-center border-4 border-primary shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-700 group-hover:scale-110 group-hover:rotate-3 relative overflow-hidden">
+                            <span class="font-black text-8xl text-primary tracking-tighter" style="font-family: 'Inter', sans-serif;">SIT</span>
+                            <!-- Detalle de punto decorativo sincronizado -->
+                            <div class="absolute top-4 right-4 w-6 h-6 bg-secondary rounded-full border-4 border-white"></div>
+                        </div>
                     </div>
-                    <span class="text-4xl text-slate-500 font-thin">+</span>
-                    <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:scale-105 transition-transform duration-500">
-                        <img src="img/Tenable_One_Logo.jpg" class="h-20 w-auto mix-blend-screen filter brightness-110 contrast-125" alt="Tenable Logo">
+
+
+
+                    <!-- Tenable One Logo GIGANTE -->
+                    <div class="bg-white/10 backdrop-blur-xl p-10 rounded-[2.5rem] border border-white/20 hover:scale-110 transition-all duration-700 shadow-[0_0_80px_rgba(255,255,255,0.05)] hover:border-white/40">
+                        <img src="img/Tenable_One_Logo.jpg" class="h-32 w-auto mix-blend-screen filter brightness-110 contrast-125" alt="Tenable Logo">
                     </div>
                 </div>
 
