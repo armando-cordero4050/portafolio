@@ -50,14 +50,8 @@
 
         body {
             background-color: #0f172a;
-            overflow-x: hidden;
-            overflow-y: auto;
-        }
-
-        @media (min-width: 1024px) {
-            body {
-                overflow: hidden;
-            }
+            overflow: hidden;
+            /* Force snap container to handle scrolling */
         }
 
         .slide-content {
@@ -171,7 +165,7 @@
                 <div class="absolute inset-0 bg-gradient-to-r from-dark-bg via-dark-bg/80 to-blue-900/30"></div>
             </div>
 
-            <div class="slide-content relative z-10 w-full max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center h-full">
+            <div class="slide-content relative z-10 w-full max-w-7xl mx-auto px-6 flex flex-col lg:grid lg:grid-cols-12 gap-4 lg:gap-8 items-center h-full pt-20 lg:pt-0">
 
                 <!-- Left Column: Branding & Text -->
                 <div class="lg:col-span-5 flex flex-col justify-center text-left pl-4">
@@ -180,23 +174,23 @@
 
                     <div class="relative">
                         <div class="absolute -left-4 -top-4 w-20 h-20 bg-blue-500/20 blur-3xl rounded-full"></div>
-                        <h1 class="text-4xl md:text-5xl lg:text-7xl font-black text-white mb-6 tracking-tight leading-[1.1] drop-shadow-2xl text-center lg:text-left">
+                        <h1 class="text-3xl md:text-5xl lg:text-7xl font-black text-white mb-4 lg:mb-6 tracking-tight leading-[1.1] drop-shadow-2xl text-center lg:text-left">
                             Ciberseguridad <br />
                             <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-indigo-400 animate-pulse drop-shadow-lg" style="text-shadow: 0 0 30px rgba(6,182,212,0.5);">Proactiva</span>
                         </h1>
                     </div>
 
-                    <h2 class="text-xl md:text-2xl font-light text-slate-300 mb-8 flex items-center justify-center lg:justify-start gap-3">
-                        con <strong class="text-white font-bold text-2xl md:text-3xl">Tenable One</strong>
+                    <h2 class="text-lg md:text-2xl font-light text-slate-300 mb-4 lg:mb-8 flex items-center justify-center lg:justify-start gap-3">
+                        con <strong class="text-white font-bold text-xl md:text-3xl">Tenable One</strong>
                     </h2>
 
-                    <p class="text-base md:text-lg text-slate-400 leading-relaxed max-w-md mx-auto lg:mx-0 border-l-4 border-cyan-500 pl-6 py-2 bg-gradient-to-r from-cyan-900/10 to-transparent text-center lg:text-left">
-                        Unificamos la visibilidad de activos, vulnerabilidades y amenazas en una sola plataforma de exposición.
+                    <p class="text-xs md:text-lg text-slate-400 leading-relaxed max-w-md mx-auto lg:mx-0 border-l-2 lg:border-l-4 border-cyan-500 pl-4 lg:pl-6 py-1 lg:py-2 bg-gradient-to-r from-cyan-900/10 to-transparent text-center lg:text-left">
+                        Unificamos la visibilidad de activos, vulnerabilidades y amenazas en una sola plataforma.
                     </p>
                 </div>
 
                 <!-- Right Column: Hexagon Network (Exploded & Modern) -->
-                <div class="lg:col-span-7 h-[400px] md:h-[600px] lg:h-[700px] relative flex items-center justify-center perspective-[2000px] scale-[0.6] md:scale-[0.8] lg:scale-100 mt-12 lg:mt-0">
+                <div class="lg:col-span-7 h-[250px] md:h-[600px] lg:h-[700px] relative flex items-center justify-center perspective-[2000px] scale-[0.45] md:scale-[0.8] lg:scale-100 mt-4 lg:mt-0">
                     <!-- 3D Inclined Plane Container -->
                     <div class="relative w-[650px] h-[650px] flex items-center justify-center transform transition-transform duration-700 hover:rotate-x-12 hover:rotate-y-12" style="transform-style: preserve-3d;">
 
@@ -311,20 +305,20 @@
         <!-- Slide 2: Banca (Light) -->
         <section class="min-h-screen lg:h-screen w-full snap-center relative flex items-center bg-white text-slate-800 overflow-hidden py-16 lg:py-0">
             <!-- Full Height Layout -->
-            <div class="w-full h-full grid grid-cols-1 lg:grid-cols-2">
+            <div class="w-full h-full flex flex-col lg:grid lg:grid-cols-2">
                 <!-- Left Content -->
                 <div class="flex flex-col justify-center px-12 lg:pl-24 lg:pr-12 relative z-20">
                     <div class="slide-content">
                         <div class="flex items-center gap-4 mb-4">
-                            <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 text-center lg:text-left">Seguridad para Instituciones Financieras</h2>
+                            <h2 class="text-2xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 text-center lg:text-left">Seguridad Bancaria</h2>
 
                         </div>
 
-                        <p class="text-lg md:text-xl text-slate-600 leading-relaxed mb-8 border-l-4 border-primary pl-6 text-center lg:text-left mx-auto lg:mx-0 max-w-2xl">
-                            Protegemos los activos más críticos del sector bancario mediante soluciones diseñadas para el estricto cumplimiento normativo y la resiliencia operativa.
+                        <p class="text-sm md:text-xl text-slate-600 leading-relaxed mb-4 lg:mb-8 border-l-2 lg:border-l-4 border-primary pl-4 lg:pl-6 text-center lg:text-left mx-auto lg:mx-0 max-w-md lg:max-w-2xl">
+                            Protegemos activos críticos mediante cumplimiento normativo y resiliencia operativa.
                         </p>
 
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                        <div class="grid grid-cols-4 lg:grid-cols-4 gap-2 lg:gap-4 mb-4 lg:mb-8 scale-[0.8] lg:scale-100">
                             <div class="compliance-badge group hover:border-blue-200">
                                 <span class="material-symbols-outlined text-primary mb-2">gavel</span>
                                 <span class="text-[10px] font-black uppercase text-slate-400 group-hover:text-primary">FFIEC</span>
@@ -371,7 +365,7 @@
                 <div class="relative h-full w-full">
                     <div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent z-10"></div>
                     <!-- Mask Image: Fade left edge to transparent so it blends with white background -->
-                    <img src="img/banca.webp" alt="Banca" class="h-64 md:h-[400px] lg:h-full w-full object-cover" style="mask-image: linear-gradient(to right, transparent 5%, black 40%); -webkit-mask-image: linear-gradient(to right, transparent 5% , black 40%);">
+                    <img src="img/banca.webp" alt="Banca" class="h-40 md:h-[400px] lg:h-full w-full object-cover mt-4 lg:mt-0" style="mask-image: linear-gradient(to bottom, transparent, black), linear-gradient(to right, transparent 5% , black 40%); -webkit-mask-image: linear-gradient(to bottom, transparent, black), linear-gradient(to right, transparent 5% , black 40%);">
                 </div>
             </div>
         </section>
@@ -381,15 +375,15 @@
         <!-- ############################################################ -->
         <!-- Slide 2.5: Tecnología de Punta y Entregables Estratégicos -->
         <section class="min-h-screen lg:h-screen w-full snap-center relative flex items-center bg-white text-slate-800 overflow-hidden py-16 lg:py-0">
-            <div class="w-full h-full grid grid-cols-1 lg:grid-cols-2">
+            <div class="w-full h-full flex flex-col lg:grid lg:grid-cols-2">
                 <!-- Left: Visual Content (crm.webp) y Entregables Clave -->
                 <div class="relative h-full w-full order-last lg:order-first bg-slate-50 flex flex-col items-center justify-center p-8 lg:p-20">
                     <div class="relative perspective-[1000px] w-full max-w-2xl mb-12">
-                        <img src="img/crm.webp" alt="CRM System" class="rounded-2xl shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)] border border-slate-200 transform lg:-rotate-2 hover:rotate-0 transition-transform duration-700 w-full h-auto object-contain">
+                        <img src="img/crm.webp" alt="CRM System" class="rounded-xl shadow-lg border border-slate-200 transform lg:-rotate-2 hover:rotate-0 transition-transform duration-700 w-48 md:w-full h-auto object-contain">
                     </div>
 
-                    <!-- Entregables Clave (Movidos aquí según solicitud) -->
-                    <div class="w-full max-w-xl pt-8 border-t border-slate-200">
+                    <!-- Entregables Clave (Compacto) -->
+                    <div class="w-full max-w-xl pt-4 lg:pt-8 border-t border-slate-200 scale-75 lg:scale-100">
                         <h3 class="text-xs font-black uppercase text-slate-400 tracking-widest mb-6">Entregables Clave</h3>
                         <div class="grid grid-cols-3 gap-6">
                             <div class="flex flex-col items-center text-center gap-2">
@@ -419,12 +413,12 @@
                     <div class="slide-content">
 
 
-                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mb-6 leading-tight tracking-tight text-center lg:text-left">
-                            Tecnología de Punta y <br class="hidden lg:block">Entregables Estratégicos
+                        <h2 class="text-2xl md:text-4xl lg:text-5xl font-black text-slate-900 mb-4 lg:mb-6 leading-tight tracking-tight text-center lg:text-left">
+                            Tecnología de Punta
                         </h2>
 
-                        <p class="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed border-l-4 border-indigo-600 pl-6 text-center lg:text-left mx-auto lg:mx-0">
-                            Implementamos la suite <strong class="text-indigo-600">Tenable One</strong> para una cobertura total, garantizando que cada hallazgo se traduzca en inteligencia accionable.
+                        <p class="text-sm md:text-xl text-slate-600 mb-4 lg:mb-10 leading-relaxed border-l-2 lg:border-l-4 border-indigo-600 pl-4 lg:pl-6 text-center lg:text-left mx-auto lg:mx-0">
+                            Implementamos <strong class="text-indigo-600">Tenable One</strong> para cobertura total e inteligencia accionable.
                         </p>
 
                         <div class="space-y-4 mb-10">
@@ -520,16 +514,16 @@
                         Gestión de Exposición
                     </div>
 
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-8 leading-tight tracking-tight text-white drop-shadow-xl text-center lg:text-left">
-                        Mitigue los Riesgos<br>del Negocio
+                    <h2 class="text-2xl md:text-4xl lg:text-5xl font-extrabold mb-4 lg:mb-8 leading-tight tracking-tight text-white drop-shadow-xl text-center lg:text-left">
+                        Mitigue Riesgos del Negocio
                     </h2>
 
-                    <p class="text-lg md:text-xl text-slate-400 mb-12 leading-relaxed max-w-xl mx-auto lg:mx-0 border-l-4 border-cyan-500 pl-6 text-center lg:text-left">
-                        Obtenga <strong class="text-white">visibilidad unificada</strong> y contexto de negocio para priorizar lo que realmente importa en su superficie de ataque.
+                    <p class="text-xs md:text-xl text-slate-400 mb-6 lg:mb-12 leading-relaxed max-w-xl mx-auto lg:mx-0 border-l-2 lg:border-l-4 border-cyan-500 pl-4 lg:pl-6 text-center lg:text-left">
+                        Obtenga <strong class="text-white">visibilidad unificada</strong> para priorizar lo que importa.
                     </p>
 
-                    <!-- Feature List (Horizontal Cards) -->
-                    <div class="space-y-4">
+                    <!-- Feature List (Compact) -->
+                    <div class="space-y-2 lg:space-y-4 scale-[0.8] lg:scale-100">
                         <div class="flex items-center gap-5 p-5 rounded-xl bg-slate-800/40 border border-slate-700/50 hover:border-cyan-500/50 hover:bg-slate-800/60 transition-all duration-300 group cursor-default">
                             <div class="w-12 h-12 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform">
                                 <span class="material-symbols-outlined text-2xl">visibility</span>
@@ -561,7 +555,7 @@
                 </div>
 
                 <!-- Right: Visual (Radar HUD) -->
-                <div class="lg:w-1/2 flex items-center justify-center relative perspective-[1000px] scale-[0.6] md:scale-[0.8] lg:scale-100">
+                <div class="lg:w-1/2 flex items-center justify-center relative perspective-[1000px] scale-[0.4] md:scale-[0.8] lg:scale-100 -mt-10 lg:mt-0">
                     <!-- Radar Container -->
                     <div class="relative w-[500px] h-[500px] flex items-center justify-center transform rotateX(10deg)">
 
@@ -612,56 +606,41 @@
         <section class="min-h-screen lg:h-screen w-full snap-center relative flex items-center justify-center bg-slate-950 text-white overflow-hidden py-16 lg:py-0">
             <div class="slide-content max-w-7xl mx-auto px-6 w-full min-h-[85vh] lg:h-[85vh] flex flex-col pt-12">
 
-                <!-- Tabs Header -->
-                <div class="flex flex-wrap justify-center border-b border-slate-800 mb-8 overflow-x-auto no-scrollbar gap-2 shrink-0">
-                    <button class="tab-btn px-4 lg:px-6 py-4 text-xs lg:text-sm font-bold uppercase tracking-wider text-cyan-400 border-b-2 border-cyan-400 transition-colors shrink-0" onclick="openTab(event, 'tab-ai')">Seguridad de IA</button>
-                    <button class="tab-btn px-4 lg:px-6 py-4 text-xs lg:text-sm font-bold uppercase tracking-wider text-slate-500 hover:text-slate-300 border-b-2 border-transparent transition-colors shrink-0" onclick="openTab(event, 'tab-vuln')">Gestión de vulnerabilidades</button>
-                    <button class="tab-btn px-4 lg:px-6 py-4 text-xs lg:text-sm font-bold uppercase tracking-wider text-slate-500 hover:text-slate-300 border-b-2 border-transparent transition-colors shrink-0" onclick="openTab(event, 'tab-cloud')">Seguridad en la nube</button>
-                    <button class="tab-btn px-4 lg:px-6 py-4 text-xs lg:text-sm font-bold uppercase tracking-wider text-slate-500 hover:text-slate-300 border-b-2 border-transparent transition-colors shrink-0" onclick="openTab(event, 'tab-ot')">Seguridad de OT</button>
-                    <button class="tab-btn px-4 lg:px-6 py-4 text-xs lg:text-sm font-bold uppercase tracking-wider text-slate-500 hover:text-slate-300 border-b-2 border-transparent transition-colors shrink-0" onclick="openTab(event, 'tab-identity')">Seguridad de identidades</button>
+                <!-- Tabs Header (Compact Scrollable) -->
+                <div class="flex border-b border-slate-800 mb-4 overflow-x-auto no-scrollbar gap-1 shrink-0 pb-2">
+                    <button class="tab-btn px-2 py-2 text-[10px] font-bold uppercase tracking-wider text-cyan-400 border-b-2 border-cyan-400 transition-colors shrink-0" onclick="openTab(event, 'tab-ai')">IA</button>
+                    <button class="tab-btn px-2 py-2 text-[10px] font-bold uppercase tracking-wider text-slate-500 border-b-2 border-transparent transition-colors shrink-0" onclick="openTab(event, 'tab-vuln')">Vuln</button>
+                    <button class="tab-btn px-2 py-2 text-[10px] font-bold uppercase tracking-wider text-slate-500 border-b-2 border-transparent transition-colors shrink-0" onclick="openTab(event, 'tab-cloud')">Nube</button>
+                    <button class="tab-btn px-2 py-2 text-[10px] font-bold uppercase tracking-wider text-slate-500 border-b-2 border-transparent transition-colors shrink-0" onclick="openTab(event, 'tab-ot')">OT</button>
+                    <button class="tab-btn px-2 py-2 text-[10px] font-bold uppercase tracking-wider text-slate-500 border-b-2 border-transparent transition-colors shrink-0" onclick="openTab(event, 'tab-identity')">Identidad</button>
                 </div>
 
                 <!-- Tab Content: AI -->
-                <div id="tab-ai" class="tab-content w-full flex-1 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <h2 class="text-3xl md:text-4xl font-extrabold mb-2 text-cyan-400 text-center lg:text-left">Cierre la exposición de la IA</h2>
-                        <h3 class="text-lg md:text-xl text-slate-400 mb-8 text-center lg:text-left">Con la plataforma de gestión de exposición impulsada por IA líder en el mundo.</h3>
-
-                        <div class="space-y-8">
-                            <div class="border-l-4 border-cyan-500 pl-6">
-                                <h4 class="text-lg font-bold text-white mb-2">Detecte la IA en todo su entorno</h4>
-                                <p class="text-slate-400">Obtenga una visión completa y consciente de los riesgos donde exista IA, de sus conexiones y de dónde comienza la exposición mediante la detección continua y proactiva.</p>
-                            </div>
-                            <div class="border-l-4 border-purple-500 pl-6">
-                                <h4 class="text-lg font-bold text-white mb-2">Proteja las cargas de trabajo y los agentes de IA</h4>
-                                <p class="text-slate-400">Reduzca el riesgo de la IA en el mundo real protegiendo los sistemas que la impulsan y cerrando las brechas de seguridad de IA.</p>
+                <div id="tab-ai" class="tab-content w-full flex-1 flex flex-col lg:grid lg:grid-cols-2 gap-4 lg:gap-12 items-center">
+                    <div class="text-center lg:text-left">
+                        <h2 class="text-xl lg:text-4xl font-extrabold mb-1 text-cyan-400">Seguridad de IA</h2>
+                        <h3 class="text-xs lg:text-xl text-slate-400 mb-4">Plataforma liderada por IA.</h3>
+                        <div class="space-y-2 text-left">
+                            <div class="border-l-2 border-cyan-500 pl-4">
+                                <h4 class="text-xs lg:text-lg font-bold text-white">Detección Continua</h4>
+                                <p class="text-[10px] lg:text-slate-400 text-slate-400">Visibilidad completa de riesgos de IA.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="relative flex items-center justify-center">
-                        <img src="img/Prompt.webp" alt="AI Security" class="rounded-xl shadow-2xl border border-cyan-500/30 w-full max-w-lg transition-transform hover:scale-105 duration-500">
-                        <!-- Tech decoration -->
-                        <div class="absolute -right-4 -bottom-4 text-9xl font-black text-slate-800 opacity-50 z-[-1] select-none">AI</div>
+                    <div class="relative flex items-center justify-center scale-50 lg:scale-100">
+                        <img src="img/Prompt.webp" alt="AI Security" class="rounded-lg shadow-xl border border-cyan-500/30 w-full max-w-xs">
                     </div>
                 </div>
 
                 <!-- Tab Content: Vuln -->
-                <div id="tab-vuln" class="tab-content w-full flex-1 hidden grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <h2 class="text-4xl font-extrabold mb-2 text-indigo-400">Gestión de Vulnerabilidades</h2>
-                        <h3 class="text-xl text-slate-400 mb-8">Priorice lo que importa con VPR.</h3>
-                        <div class="space-y-6">
-                            <p class="text-slate-300 text-lg">No todas las vulnerabilidades son iguales. Utilice la clasificación de prioridad de vulnerabilidades (VPR) para enfocarse en el 3% de vulnerabilidades que realmente han sido explotadas.</p>
-                            <ul class="list-disc pl-5 text-slate-400 space-y-2">
-                                <li>Cobertura integral de CVEs.</li>
-                                <li>Inteligencia de amenazas en tiempo real.</li>
-                                <li>Predicción de exploitabilidad.</li>
-                            </ul>
-                        </div>
+                <div id="tab-vuln" class="tab-content w-full flex-1 hidden flex-col lg:grid lg:grid-cols-2 gap-4 lg:gap-12 items-center">
+                    <div class="text-center lg:text-left">
+                        <h2 class="text-xl lg:text-4xl font-extrabold mb-1 text-indigo-400">Vulnerabilidades</h2>
+                        <h3 class="text-xs lg:text-xl text-slate-400 mb-4">Priorización Inteligente (VPR).</h3>
+                        <p class="text-[10px] text-slate-300 leading-tight mb-4">Enfóquese en el 3% de vulnerabilidades explotadas.</p>
                     </div>
-                    <div class="relative flex items-center justify-center">
-                        <img src="img/Prompt2.webp" alt="Vulnerability Management" class="rounded-xl shadow-2xl border border-indigo-500/30 w-full max-w-lg transition-transform hover:scale-105 duration-500">
-                        <div class="absolute -right-4 -bottom-4 text-9xl font-black text-slate-800 opacity-50 z-[-1] select-none">VULN</div>
+                    <div class="relative flex items-center justify-center scale-50 lg:scale-100">
+                        <img src="img/Prompt2.webp" alt="Vulnerability Management" class="rounded-lg shadow-xl border border-indigo-500/30 w-full max-w-xs">
                     </div>
                 </div>
                 <!-- Tab Content: Cloud -->
@@ -736,64 +715,52 @@
             <div class="absolute inset-0 z-0 opacity-30" style="background-image: radial-gradient(#cbd5e1 1px, transparent 1px); background-size: 30px 30px;"></div>
 
             <div class="slide-content max-w-7xl mx-auto px-6 w-full relative z-10">
-                <div class="text-center mb-16">
-                    <h2 class="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6 max-w-4xl mx-auto leading-tight">
-                        Libere la seguridad en la nube escalable para el mundo híbrido de hoy
+                <div class="text-center mb-6 lg:mb-16">
+                    <h2 class="text-xl md:text-5xl font-extrabold text-slate-900 mb-2 lg:mb-6 max-w-4xl mx-auto leading-tight">
+                        Seguridad Híbrida Escalable
                     </h2>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Feature 1 -->
-                    <div class="flex flex-col items-center text-center group">
-                        <div class="w-24 h-24 bg-slate-50 relative flex items-center justify-center mb-6 transition-transform group-hover:scale-110 duration-500">
-                            <!-- Hexagon Shape CSS -->
-                            <div class="absolute inset-0 bg-white border-2 border-slate-100 shadow-lg" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);"></div>
-                            <div class="absolute inset-2 bg-slate-50 z-10" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);"></div>
-                            <span class="material-symbols-outlined text-4xl text-cyan-600 relative z-20">paid</span>
+                    <!-- Feature (Compact for mobile) -->
+                    <div class="flex flex-row lg:flex-col items-center text-left lg:text-center group gap-4">
+                        <div class="w-12 h-12 lg:w-24 lg:h-24 bg-slate-50 relative flex items-center justify-center lg:mb-6 shrink-0">
+                            <div class="absolute inset-0 bg-white border border-slate-100 shadow-md" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);"></div>
+                            <span class="material-symbols-outlined text-xl lg:text-4xl text-cyan-600 relative z-20">paid</span>
                         </div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-4 h-12 flex items-center justify-center">Seguridad para que escale de manera rentable</h3>
-                        <p class="text-sm text-slate-500 leading-relaxed">
-                            Haga que los silos no sean una barrera, consolide las herramientas de seguridad en la nube e impulse nuevas rentabilidades con un abordaje unificado.
-                        </p>
+                        <div>
+                            <h3 class="text-xs lg:text-lg font-bold text-slate-900">Escalabilidad Rentable</h3>
+                            <p class="text-[10px] lg:text-sm text-slate-500 hidden md:block">Consolide herramientas e impulse rentabilidades.</p>
+                        </div>
                     </div>
 
-                    <!-- Feature 2 -->
-                    <div class="flex flex-col items-center text-center group">
-                        <div class="w-24 h-24 bg-slate-50 relative flex items-center justify-center mb-6 transition-transform group-hover:scale-110 duration-500 delay-100">
-                            <div class="absolute inset-0 bg-white border-2 border-slate-100 shadow-lg" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);"></div>
-                            <div class="absolute inset-2 bg-slate-50 z-10" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);"></div>
-                            <span class="material-symbols-outlined text-4xl text-cyan-600 relative z-20">visibility</span>
+                    <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8">
+                        <!-- Feature 2 -->
+                        <div class="flex flex-col items-center text-center group">
+                            <div class="w-12 h-12 lg:w-24 lg:h-24 bg-slate-50 relative flex items-center justify-center mb-2 lg:mb-6">
+                                <div class="absolute inset-0 bg-white border border-slate-100 shadow-md" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);"></div>
+                                <span class="material-symbols-outlined text-xl lg:text-4xl text-cyan-600 relative z-20">visibility</span>
+                            </div>
+                            <h3 class="text-[10px] lg:text-lg font-bold text-slate-900 leading-tight">Visibilidad Híbrida</h3>
                         </div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-4 h-12 flex items-center justify-center">Visualice la exposición de aplicaciones híbridas</h3>
-                        <p class="text-sm text-slate-500 leading-relaxed">
-                            Obtenga una visibilidad detallada hacia las aplicaciones y los servicios híbridos que abarcan las nubes locales y públicas con tarjetas de exposiciones personalizadas.
-                        </p>
-                    </div>
 
-                    <!-- Feature 3 -->
-                    <div class="flex flex-col items-center text-center group">
-                        <div class="w-24 h-24 bg-slate-50 relative flex items-center justify-center mb-6 transition-transform group-hover:scale-110 duration-500 delay-200">
-                            <div class="absolute inset-0 bg-white border-2 border-slate-100 shadow-lg" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);"></div>
-                            <div class="absolute inset-2 bg-slate-50 z-10" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);"></div>
-                            <span class="material-symbols-outlined text-4xl text-cyan-600 relative z-20">cloud_sync</span>
+                        <!-- Feature 3 -->
+                        <div class="flex flex-col items-center text-center group">
+                            <div class="w-12 h-12 lg:w-24 lg:h-24 bg-slate-50 relative flex items-center justify-center mb-2 lg:mb-6">
+                                <div class="absolute inset-0 bg-white border border-slate-100 shadow-md" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);"></div>
+                                <span class="material-symbols-outlined text-xl lg:text-4xl text-cyan-600 relative z-20">cloud_sync</span>
+                                <h3 class="text-[10px] lg:text-lg font-bold text-slate-900 leading-tight">Migración Segura</h3>
+                            </div>
                         </div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-4 h-12 flex items-center justify-center">Facilite su migración a la nube</h3>
-                        <p class="text-sm text-slate-500 leading-relaxed">
-                            Deposite su confianza en una estrategia multinube nativa que hace cumplir una postura de seguridad constante y protecciones en tiempos de ejecución.
-                        </p>
-                    </div>
 
-                    <!-- Feature 4 -->
-                    <div class="flex flex-col items-center text-center group">
-                        <div class="w-24 h-24 bg-slate-50 relative flex items-center justify-center mb-6 transition-transform group-hover:scale-110 duration-500 delay-300">
-                            <div class="absolute inset-0 bg-white border-2 border-slate-100 shadow-lg" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);"></div>
-                            <div class="absolute inset-2 bg-slate-50 z-10" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);"></div>
-                            <span class="material-symbols-outlined text-4xl text-cyan-600 relative z-20">shield_lock</span>
+                        <!-- Feature 4 -->
+                        <div class="flex flex-col items-center text-center group">
+                            <div class="w-12 h-12 lg:w-24 lg:h-24 bg-slate-50 relative flex items-center justify-center mb-2 lg:mb-6">
+                                <div class="absolute inset-0 bg-white border border-slate-100 shadow-md" style="clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);"></div>
+                                <span class="material-symbols-outlined text-xl lg:text-4xl text-cyan-600 relative z-20">shield_lock</span>
+                            </div>
+                            <h3 class="text-[10px] lg:text-lg font-bold text-slate-900 leading-tight">Mitigación Proactiva</h3>
                         </div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-4 h-12 flex items-center justify-center">Mitigue las rutas de ataque híbridas</h3>
-                        <p class="text-sm text-slate-500 leading-relaxed">
-                            Visualice las rutas de ataque que atraviesan las nubes locales y públicas, y conozca el radio de impacto y las correcciones óptimas.
-                        </p>
                     </div>
 
                 </div>
@@ -807,43 +774,35 @@
         <section class="min-h-screen lg:h-screen w-full snap-center relative flex items-center justify-center bg-slate-50 text-slate-800 py-16 lg:py-0">
             <div class="absolute inset-0 z-0 opacity-10" style="background-image: url('img/network_bg.webp'); background-size: cover;"></div>
             <div class="slide-content max-w-7xl mx-auto px-6 w-full relative z-10">
-                <div class="text-center max-w-3xl mx-auto mb-16 relative">
-                    <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_w51pcehl.json" background="transparent" speed="1" style="width: 200px; height: 100px; margin: 0 auto;" loop autoplay></lottie-player>
-                    <h2 class="text-4xl font-extrabold text-slate-900 mb-6">Nuestro Valor como Partner Estratégico</h2>
-                    <p class="text-lg text-slate-600">En SIT, consolidamos la tecnología líder con un equipo experto para garantizar una implementación sin fisuras.</p>
+                <div class="text-center max-w-3xl mx-auto mb-4 lg:mb-16 relative">
+                    <h2 class="text-2xl md:text-4xl font-extrabold text-slate-900 mb-2 lg:mb-6">Partner Estratégico</h2>
+                    <p class="text-xs md:text-lg text-slate-600 px-4">Consolidamos tecnología líder con un equipo experto.</p>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-10">
-                    <div class="relative text-center px-4 group">
-                        <div class="w-20 h-20 rounded-full bg-white shadow-lg mx-auto flex items-center justify-center mb-6 relative z-10 border border-slate-100 group-hover:border-primary transition-colors">
-                            <span class="material-symbols-outlined text-3xl text-primary">fact_check</span>
-                            <div class="step-connector"></div>
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8 mb-4 lg:mb-10 scale-[0.8] lg:scale-100">
+                    <div class="relative text-center px-2 group">
+                        <div class="w-12 h-12 lg:w-20 lg:h-20 rounded-full bg-white shadow-lg mx-auto flex items-center justify-center mb-4 lg:mb-6 border border-slate-100">
+                            <span class="material-symbols-outlined text-xl lg:text-3xl text-primary">fact_check</span>
                         </div>
-                        <h4 class="text-lg font-bold mb-2 text-slate-900">1. Evaluación</h4>
-                        <p class="text-sm text-slate-500">Diagnóstico profundo de su estado actual de ciberseguridad y activos.</p>
+                        <h4 class="text-xs lg:text-lg font-bold text-slate-900">1. Evaluación</h4>
                     </div>
-                    <div class="relative text-center px-4 group">
-                        <div class="w-20 h-20 rounded-full bg-white shadow-lg mx-auto flex items-center justify-center mb-6 relative z-10 border border-slate-100 group-hover:border-secondary transition-colors">
-                            <span class="material-symbols-outlined text-3xl text-secondary">architecture</span>
-                            <div class="step-connector"></div>
+                    <div class="relative text-center px-2 group">
+                        <div class="w-12 h-12 lg:w-20 lg:h-20 rounded-full bg-white shadow-lg mx-auto flex items-center justify-center mb-4 lg:mb-6 border border-slate-100">
+                            <span class="material-symbols-outlined text-xl lg:text-3xl text-secondary">architecture</span>
                         </div>
-                        <h4 class="text-lg font-bold mb-2 text-slate-900">2. Implementación</h4>
-                        <p class="text-sm text-slate-500">Configuración experta adaptada a su entorno bancario.</p>
+                        <h4 class="text-xs lg:text-lg font-bold text-slate-900">2. Implementación</h4>
                     </div>
-                    <div class="relative text-center px-4 group">
-                        <div class="w-20 h-20 rounded-full bg-white shadow-lg mx-auto flex items-center justify-center mb-6 relative z-10 border border-slate-100 group-hover:border-primary transition-colors">
-                            <span class="material-symbols-outlined text-3xl text-primary">speed</span>
-                            <div class="step-connector"></div>
+                    <div class="relative text-center px-2 group">
+                        <div class="w-12 h-12 lg:w-20 lg:h-20 rounded-full bg-white shadow-lg mx-auto flex items-center justify-center mb-4 lg:mb-6 border border-slate-100">
+                            <span class="material-symbols-outlined text-xl lg:text-3xl text-primary">speed</span>
                         </div>
-                        <h4 class="text-lg font-bold mb-2 text-slate-900">3. Optimización</h4>
-                        <p class="text-sm text-slate-500">Ajuste continuo de políticas y priorización para máxima eficiencia.</p>
+                        <h4 class="text-xs lg:text-lg font-bold text-slate-900">3. Optimización</h4>
                     </div>
-                    <div class="relative text-center px-4 group">
-                        <div class="w-20 h-20 rounded-full bg-white shadow-lg mx-auto flex items-center justify-center mb-6 relative z-10 border border-slate-100 group-hover:border-secondary transition-colors">
-                            <span class="material-symbols-outlined text-3xl text-secondary">support_agent</span>
+                    <div class="relative text-center px-2 group">
+                        <div class="w-12 h-12 lg:w-20 lg:h-20 rounded-full bg-white shadow-lg mx-auto flex items-center justify-center mb-4 lg:mb-6 border border-slate-100">
+                            <span class="material-symbols-outlined text-xl lg:text-3xl text-secondary">support_agent</span>
                         </div>
-                        <h4 class="text-lg font-bold mb-2 text-slate-900">4. Soporte</h4>
-                        <p class="text-sm text-slate-500">Acompañamiento técnico experto y respuesta ágil 24/7.</p>
+                        <h4 class="text-xs lg:text-lg font-bold text-slate-900">4. Soporte</h4>
                     </div>
                 </div>
             </div>
@@ -912,38 +871,14 @@
                         Nuestro Centro de Operaciones de Red (NOC) actúa como el <strong class="text-white">sistema nervioso central</strong> de su seguridad. Monitoreamos y respondemos a incidentes en tiempo real para garantizar su continuidad operativa.
                     </p>
 
-                    <div class="space-y-6">
-                        <!-- Benefit 1 -->
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 rounded-lg bg-cyan-500/10 flex flex-col items-center justify-center border border-cyan-500/20 shrink-0">
-                                <span class="material-symbols-outlined text-cyan-400">ecg_heart</span>
-                            </div>
-                            <div>
-                                <h4 class="text-white font-bold text-lg">Monitoreo Proactivo</h4>
-                                <p class="text-slate-400 text-sm">Detectamos anomalías antes de que afecten al negocio, asegurando disponibilidad 99.9%.</p>
-                            </div>
+                    <div class="grid grid-cols-1 gap-2 scale-90 lg:scale-100">
+                        <div class="flex gap-4 items-center">
+                            <span class="material-symbols-outlined text-cyan-400">ecg_heart</span>
+                            <span class="text-xs text-white font-bold">Monitoreo Proactivo 24/7</span>
                         </div>
-
-                        <!-- Benefit 2 -->
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 rounded-lg bg-blue-500/10 flex flex-col items-center justify-center border border-blue-500/20 shrink-0">
-                                <span class="material-symbols-outlined text-blue-400">group_add</span>
-                            </div>
-                            <div>
-                                <h4 class="text-white font-bold text-lg">Expertise Certificado</h4>
-                                <p class="text-slate-400 text-sm">Ingenieros certificados (Cisco, CompTIA, Microsoft) dedicados a resolver sus casos complejos.</p>
-                            </div>
-                        </div>
-
-                        <!-- Benefit 3 -->
-                        <div class="flex gap-4">
-                            <div class="w-12 h-12 rounded-lg bg-purple-500/10 flex flex-col items-center justify-center border border-purple-500/20 shrink-0">
-                                <span class="material-symbols-outlined text-purple-400">support_agent</span>
-                            </div>
-                            <div>
-                                <h4 class="text-white font-bold text-lg">Respuesta Inmediata</h4>
-                                <p class="text-slate-400 text-sm">Soporte remoto eficaz para contención y remediación ágil de amenazas.</p>
-                            </div>
+                        <div class="flex gap-4 items-center">
+                            <span class="material-symbols-outlined text-blue-400">group_add</span>
+                            <span class="text-xs text-white font-bold">Expertise Certificado</span>
                         </div>
                     </div>
                 </div>
@@ -1021,175 +956,75 @@
             </div>
 
             <div class="slide-content max-w-7xl mx-auto px-6 w-full relative z-10">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight drop-shadow-lg">Sectores que Protegemos</h2>
-                    <p class="text-slate-300 text-xl max-w-2xl mx-auto">Nuestra experiencia blinda las industrias más críticas contra amenazas avanzadas.</p>
+                <div class="text-center mb-6 lg:mb-12">
+                    <h2 class="text-2xl lg:text-5xl font-black mb-2 text-white">Sectores</h2>
                 </div>
-
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-                    <!-- Banca (Added) -->
-                    <div class="group relative bg-white/5 backdrop-blur-md rounded-3xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(255,215,0,0.3)]">
-                        <div class="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        <div class="w-16 h-16 rounded-2xl bg-yellow-600/20 text-yellow-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-inner border border-yellow-500/30">
-                            <span class="material-symbols-outlined text-4xl">account_balance</span>
-                        </div>
-                        <h3 class="font-bold text-xl mb-3 text-white">BANCA</h3>
-                        <p class="text-sm text-slate-400 leading-snug">Seguridad transaccional y cumplimiento normativo.</p>
+                <div class="grid grid-cols-2 lg:grid-cols-5 gap-3 lg:gap-8 scale-90 lg:scale-100 px-4">
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/10 flex flex-col items-center">
+                        <span class="material-symbols-outlined text-3xl text-blue-400 mb-2">account_balance</span>
+                        <h3 class="font-bold text-[10px] tracking-widest uppercase">BANCA</h3>
                     </div>
-
-                    <!-- Salud -->
-                    <div class="group relative bg-white/5 backdrop-blur-md rounded-3xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(37,99,235,0.3)]">
-                        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        <div class="w-16 h-16 rounded-2xl bg-blue-600/20 text-blue-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-inner border border-blue-500/30">
-                            <span class="material-symbols-outlined text-4xl">medical_services</span>
-                        </div>
-                        <h3 class="font-bold text-xl mb-3 text-white">SALUD</h3>
-                        <p class="text-sm text-slate-400 leading-snug">Protección integral de datos sensibles de pacientes (HIPAA).</p>
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/10 flex flex-col items-center">
+                        <span class="material-symbols-outlined text-3xl text-blue-400 mb-2">medical_services</span>
+                        <h3 class="font-bold text-[10px] tracking-widest uppercase">SALUD</h3>
                     </div>
-
-                    <!-- Energía -->
-                    <div class="group relative bg-white/5 backdrop-blur-md rounded-3xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(13,148,136,0.3)]">
-                        <div class="absolute inset-0 bg-gradient-to-br from-teal-500/10 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        <div class="w-16 h-16 rounded-2xl bg-teal-600/20 text-teal-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-inner border border-teal-500/30">
-                            <span class="material-symbols-outlined text-4xl">bolt</span>
-                        </div>
-                        <h3 class="font-bold text-xl mb-3 text-white">ENERGÍA</h3>
-                        <p class="text-sm text-slate-400 leading-snug">Seguridad resiliente para infraestructuras operativas (OT).</p>
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/10 flex flex-col items-center">
+                        <span class="material-symbols-outlined text-3xl text-teal-400 mb-2">bolt</span>
+                        <h3 class="font-bold text-[10px] tracking-widest uppercase">ENERGÍA</h3>
                     </div>
-
-                    <!-- Educación -->
-                    <div class="group relative bg-white/5 backdrop-blur-md rounded-3xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(37,99,235,0.3)]">
-                        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        <div class="w-16 h-16 rounded-2xl bg-blue-600/20 text-blue-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-inner border border-blue-500/30">
-                            <span class="material-symbols-outlined text-4xl">school</span>
-                        </div>
-                        <h3 class="font-bold text-xl mb-3 text-white">EDUCACIÓN</h3>
-                        <p class="text-sm text-slate-400 leading-snug">Resguardo de portales académicos y datos estudiantiles.</p>
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/10 flex flex-col items-center">
+                        <span class="material-symbols-outlined text-3xl text-blue-400 mb-2">school</span>
+                        <h3 class="font-bold text-[10px] tracking-widest uppercase">EDUCACIÓN</h3>
                     </div>
-
-                    <!-- Alimentos -->
-                    <div class="group relative bg-white/5 backdrop-blur-md rounded-3xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(13,148,136,0.3)]">
-                        <div class="absolute inset-0 bg-gradient-to-br from-teal-500/10 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                        <div class="w-16 h-16 rounded-2xl bg-teal-600/20 text-teal-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-inner border border-teal-500/30">
-                            <span class="material-symbols-outlined text-4xl">restaurant</span>
-                        </div>
-                        <h3 class="font-bold text-xl mb-3 text-white">ALIMENTOS</h3>
-                        <p class="text-sm text-slate-400 leading-snug">Continuidad garantizada en cadenas de suministro críticas.</p>
+                    <div class="bg-white/10 backdrop-blur-md rounded-2xl p-4 border border-white/10 flex flex-col items-center">
+                        <span class="material-symbols-outlined text-3xl text-teal-400 mb-2">restaurant</span>
+                        <h3 class="font-bold text-[10px] tracking-widest uppercase">ALIMENTOS</h3>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- ############################################################ -->
-        <!-- INICIO: SLIDE 6 - SOLUCIONES DE PRÓXIMA GENERACIÓN           -->
-        <!-- ############################################################ -->
-        <!-- Slide 6: Soluciones (Grid) -->
-        <section class="min-h-screen lg:h-screen w-full snap-center relative flex items-center justify-center bg-white text-slate-800 py-16 lg:py-0">
+        <!-- Slide 6: Soluciones -->
+        <section class="min-h-screen lg:h-screen w-full snap-center relative flex items-center justify-center bg-white text-slate-800 py-4 lg:py-0">
             <div class="slide-content max-w-7xl mx-auto px-6 w-full">
-                <div class="text-center mb-12">
-                    <h2 class="text-4xl font-extrabold text-slate-900 mb-4">Soluciones de Próxima Generación</h2>
-                    <p class="text-slate-600">Portafolio integral de Tenable One adaptado a la vertical financiera.</p>
+                <div class="text-center mb-6 lg:mb-12">
+                    <h2 class="text-2xl lg:text-4xl font-extrabold text-slate-900 mb-1">Soluciones Pro</h2>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col group hover:border-primary/50 transition-colors">
-                        <div class="mb-4 flex items-center gap-4">
-                            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-                                <span class="material-symbols-outlined text-2xl font-bold">radar</span>
-                            </div>
-                            <h3 class="text-xl font-black text-slate-900">Exposure Management</h3>
-                        </div>
-                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                            Priorización de riesgos basada en activos críticos transaccionales. (Vulnerability Management).
-                        </p>
-                        <div class="mt-auto pt-4 border-t border-slate-100">
-                            <span class="text-[10px] font-black uppercase text-primary tracking-widest">Activos Críticos</span>
-                        </div>
+                <div class="grid grid-cols-2 gap-4 scale-90 lg:scale-100">
+                    <div class="bg-slate-50 p-4 lg:p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-center">
+                        <span class="material-symbols-outlined text-xl text-primary mb-1">radar</span>
+                        <h4 class="text-xs lg:text-lg font-black">Exposure</h4>
                     </div>
-
-                    <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col group hover:border-secondary/50 transition-colors">
-                        <div class="mb-4 flex items-center gap-4">
-                            <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
-                                <span class="material-symbols-outlined text-2xl font-bold">cloud_done</span>
-                            </div>
-                            <h3 class="text-xl font-black text-slate-900">Cloud Security</h3>
-                        </div>
-                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                            Seguridad para infraestructuras de banca digital y APIs en la nube.
-                        </p>
-                        <div class="mt-auto pt-4 border-t border-slate-100">
-                            <span class="text-[10px] font-black uppercase text-secondary tracking-widest">Banca Digital</span>
-                        </div>
+                    <div class="bg-slate-50 p-4 lg:p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-center">
+                        <span class="material-symbols-outlined text-xl text-secondary mb-1">cloud_done</span>
+                        <h4 class="text-xs lg:text-lg font-black">Cloud</h4>
                     </div>
-
-                    <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col group hover:border-primary/50 transition-colors">
-                        <div class="mb-4 flex items-center gap-4">
-                            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
-                                <span class="material-symbols-outlined text-2xl font-bold">fingerprint</span>
-                            </div>
-                            <h3 class="text-xl font-black text-slate-900">Identity Exposure</h3>
-                        </div>
-                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                            Protección contra ataques de Active Directory para prevenir movimientos laterales.
-                        </p>
-                        <div class="mt-auto pt-4 border-t border-slate-100">
-                            <span class="text-[10px] font-black uppercase text-primary tracking-widest">Protección de Directorio</span>
-                        </div>
+                    <div class="bg-slate-50 p-4 lg:p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-center">
+                        <span class="material-symbols-outlined text-xl text-primary mb-1">fingerprint</span>
+                        <h4 class="text-xs lg:text-lg font-black">Identity</h4>
                     </div>
-
-                    <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col group hover:border-secondary/50 transition-colors">
-                        <div class="mb-4 flex items-center gap-4">
-                            <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
-                                <span class="material-symbols-outlined text-2xl font-bold">atm</span>
-                            </div>
-                            <h3 class="text-xl font-black text-slate-900">OT Security</h3>
-                        </div>
-                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
-                            Protección de infraestructuras físicas críticas (ATM y Datacenters).
-                        </p>
-                        <div class="mt-auto pt-4 border-t border-slate-100">
-                            <span class="text-[10px] font-black uppercase text-secondary tracking-widest">Sistemas OT / ATMs</span>
-                        </div>
+                    <div class="bg-slate-50 p-4 lg:p-8 rounded-2xl border border-slate-200 shadow-sm flex flex-col items-center">
+                        <span class="material-symbols-outlined text-xl text-secondary mb-1">atm</span>
+                        <h4 class="text-xs lg:text-lg font-black">OT Sec</h4>
                     </div>
                 </div>
             </div>
         </section>
 
-
-
-        <!-- ############################################################ -->
-        <!-- INICIO: SLIDE FINAL - LLAMADO A LA ACCIÓN (CTA)              -->
-        <!-- ############################################################ -->
-        <!-- Final Slide: CTA -->
-        <section class="min-h-screen lg:h-screen w-full snap-center relative flex items-center justify-center bg-slate-900 text-white overflow-hidden py-16 lg:py-0">
-            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-slate-800 to-[#020617] z-0"></div>
-            <!-- Animated Grid -->
-            <div class="absolute inset-0 opacity-10" style="background-image: linear-gradient(#06b6d4 1px, transparent 1px), linear-gradient(90deg, #06b6d4 1px, transparent 1px); background-size: 50px 50px;"></div>
-
-            <div class="slide-content z-10 text-center flex flex-col items-center gap-12">
-                <!-- Logos -->
-                <div class="flex flex-col md:flex-row items-center gap-12 md:gap-24 animate-fade-in-up">
-                    <!-- SIT Premium Logo GIGANTE (Estilo Brand Pill sincronizado) -->
-                    <div class="relative group">
-                        <div class="h-40 w-40 md:h-56 md:w-56 bg-white rounded-[2rem] md:rounded-[3rem] flex items-center justify-center border-4 border-primary shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-700 group-hover:scale-110 group-hover:rotate-3 relative overflow-hidden">
-                            <span class="font-black text-6xl md:text-8xl text-primary tracking-tighter" style="font-family: 'Inter', sans-serif;">SIT</span>
-                            <!-- Detalle de punto decorativo sincronizado -->
-                            <div class="absolute top-2 right-2 md:top-4 md:right-4 w-4 h-4 md:w-6 md:h-6 bg-secondary rounded-full border-4 border-white"></div>
-                        </div>
+        <!-- Slide Final: CTA -->
+        <section class="min-h-screen lg:h-screen w-full snap-center relative flex items-center justify-center bg-slate-900 text-white overflow-hidden py-4 lg:py-0">
+            <div class="absolute inset-0 bg-[#020617] z-0"></div>
+            <div class="slide-content z-10 text-center flex flex-col items-center gap-6 lg:gap-12 scale-90 lg:scale-100">
+                <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-24">
+                    <div class="h-24 w-24 lg:h-56 lg:w-56 bg-white rounded-3xl flex items-center justify-center border-2 lg:border-4 border-primary shadow-2xl">
+                        <span class="font-black text-3xl lg:text-8xl text-primary tracking-tighter">SIT</span>
                     </div>
-
-
-
-                    <!-- Tenable One Logo GIGANTE -->
-                    <div class="bg-white/10 backdrop-blur-xl p-6 md:p-10 rounded-[1.5rem] md:rounded-[2.5rem] border border-white/20 hover:scale-110 transition-all duration-700 shadow-[0_0_80px_rgba(255,255,255,0.05)] hover:border-white/40">
-                        <img src="img/Tenable_One_Logo.webp" class="h-20 md:h-32 w-auto mix-blend-screen filter brightness-110 contrast-125" alt="Tenable Logo">
+                    <div class="bg-white/10 backdrop-blur-xl p-4 lg:p-10 rounded-2xl border border-white/20">
+                        <img src="img/Tenable_One_Logo.webp" class="h-12 lg:h-32 w-auto filter brightness-110" alt="Tenable">
                     </div>
                 </div>
-
-                <h2 class="text-3xl md:text-5xl lg:text-7xl font-black leading-tight bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-white to-purple-400 drop-shadow-2xl max-w-5xl mx-auto px-4">
-                    ¿Estás listo para proteger tu organización?
-                </h2>
-
-                <a href="#contacto" class="px-10 py-4 rounded-full bg-cyan-500 hover:bg-cyan-400 text-white font-bold text-lg shadow-[0_0_30px_rgba(6,182,212,0.4)] transition-all hover:scale-110 hover:shadow-[0_0_50px_rgba(6,182,212,0.6)]">
+                <h2 class="text-xl lg:text-6xl font-black px-4">¿Listo para proteger su organización?</h2>
+                <a href="#contacto" class="px-8 py-3 lg:px-12 lg:py-5 rounded-full bg-cyan-500 text-white font-bold text-sm lg:text-xl shadow-lg transition-all hover:scale-105">
                     Contáctanos
                 </a>
             </div>

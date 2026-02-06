@@ -70,8 +70,8 @@
 <body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden selection:bg-blue-200 selection:text-blue-900">
 
     <!-- Floating Navigation (New Design) -->
-    <div class="fixed top-4 md:top-6 left-0 right-0 z-50 flex justify-center px-4">
-        <nav class="glass-nav rounded-full px-4 md:px-8 py-3 md:py-4 flex items-center justify-between w-full max-w-7xl transition-all duration-300 hover:scale-[1.01] hover:shadow-xl">
+    <div class="fixed top-4 left-0 right-0 z-50 flex justify-center px-4">
+        <nav class="glass-nav rounded-full px-5 py-2.5 flex items-center justify-between w-full max-w-7xl transition-all duration-300 shadow-xl">
             <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
                 <!-- SIT Premium Logo (Sincronizado) -->
                 <div class="h-10 w-10 bg-white rounded-lg flex items-center justify-center shadow-md border-2 border-primary relative">
@@ -108,19 +108,19 @@
 
             <div class="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pt-20">
                 <!-- Text Content -->
-                <div class="lg:w-1/2 text-center lg:text-left">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-primary text-[10px] md:text-xs font-bold uppercase tracking-widest mb-6 animate-bounce">
+                <div class="lg:w-1/2 text-center lg:text-left flex flex-col items-center lg:items-start">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-primary text-[10px] md:text-xs font-bold uppercase tracking-widest mb-4 animate-bounce">
                         <span class="relative flex h-2 w-2">
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
                         </span>
                         Alianza Estratégica Tenable
                     </div>
-                    <h1 class="text-4xl md:text-5xl lg:text-7xl font-black text-white mb-6 leading-[1.1] tracking-tight">
+                    <h1 class="text-3xl md:text-5xl lg:text-7xl font-black text-white mb-4 leading-tight tracking-tight">
                         Ciberseguridad Proactiva con <span class="text-glow text-primary">Tenable One</span>
                     </h1>
-                    <p class="text-base md:text-lg lg:text-xl text-slate-400 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
-                        Como socio estratégico de Tenable, SIT ofrece la plataforma de exposición cibernética líder para consolidar su seguridad y reducir riesgos antes de que ocurran.
+                    <p class="text-sm md:text-lg lg:text-xl text-slate-400 mb-6 leading-relaxed max-w-xl">
+                        Como socio estratégico de Tenable, SIT ofrece la plataforma de exposición cibernética líder para consolidar su seguridad.
                     </p>
                     <!-- Buttons Removed as requested -->
                 </div>
