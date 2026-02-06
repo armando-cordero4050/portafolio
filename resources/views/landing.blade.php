@@ -78,7 +78,6 @@
                     <span class="font-black text-xs text-primary tracking-tighter" style="font-family: 'Inter', sans-serif;">SIT</span>
                     <div class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-secondary rounded-full border-2 border-white"></div>
                 </div>
-                <span class="text-sm font-black text-slate-800 tracking-tighter">SIT</span>
             </div>
             <div class="hidden md:flex items-center gap-8">
                 <a class="text-sm font-semibold text-slate-600 hover:text-primary transition-colors hover:scale-105 transform duration-200" href="#hero">Inicio</a>
