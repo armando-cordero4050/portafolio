@@ -1,0 +1,1 @@
+import{af as i,a6 as t}from"./main-3f772619.js";const o=i("InvoiceStore",{actions:{fetchInvoices(e){return t.get("apps/invoices",{params:e})},fetchInvoice(e){return t.get(`/apps/invoices/${e}`)},fetchClients(){return t.get("/apps/invoice/clients")},deleteInvoice(e){return t.delete(`/apps/invoices/${e}`)}}});export{o as u};
