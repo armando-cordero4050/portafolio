@@ -30,8 +30,8 @@
                         "sans": ["Inter", "sans-serif"]
                     },
                     backgroundImage: {
-                        'hero-pattern': "url('img/shield_bg.png')",
-                        'network-pattern': "url('img/network_bg.png')",
+                        'hero-pattern': "url('img/shield_bg.webp')",
+                        'network-pattern': "url('img/network_bg.webp')",
                     }
                 },
             },
@@ -364,7 +364,7 @@
                 <div class="relative h-full w-full">
                     <div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent z-10"></div>
                     <!-- Mask Image: Fade left edge to transparent so it blends with white background -->
-                    <img src="img/banca.png" alt="Banca" class="h-full w-full object-cover" style="mask-image: linear-gradient(to right, transparent 5%, black 40%); -webkit-mask-image: linear-gradient(to right, transparent 5%, black 40%);">
+                    <img src="img/banca.webp" alt="Banca" class="h-full w-full object-cover" style="mask-image: linear-gradient(to right, transparent 5%, black 40%); -webkit-mask-image: linear-gradient(to right, transparent 5%, black 40%);">
                 </div>
             </div>
         </section>
@@ -375,10 +375,10 @@
         <!-- Slide 2.5: Tecnología de Punta y Entregables Estratégicos -->
         <section class="h-screen w-full snap-center relative flex items-center bg-white text-slate-800 overflow-hidden">
             <div class="w-full h-full grid grid-cols-1 lg:grid-cols-2">
-                <!-- Left: Visual Content (crm.png) y Entregables Clave -->
+                <!-- Left: Visual Content (crm.webp) y Entregables Clave -->
                 <div class="relative h-full w-full order-last lg:order-first bg-slate-50 flex flex-col items-center justify-center p-8 lg:p-20">
                     <div class="relative perspective-[1000px] w-full max-w-2xl mb-12">
-                        <img src="img/crm.png" alt="CRM System" class="rounded-2xl shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)] border border-slate-200 transform lg:-rotate-2 hover:rotate-0 transition-transform duration-700 w-full h-auto object-contain">
+                        <img src="img/crm.webp" alt="CRM System" class="rounded-2xl shadow-[0_30px_60px_-15px_rgba(0,0,0,0.15)] border border-slate-200 transform lg:-rotate-2 hover:rotate-0 transition-transform duration-700 w-full h-auto object-contain">
                     </div>
 
                     <!-- Entregables Clave (Movidos aquí según solicitud) -->
@@ -632,7 +632,7 @@
                         </div>
                     </div>
                     <div class="relative flex items-center justify-center">
-                        <img src="img/Prompt.png" alt="AI Security" class="rounded-xl shadow-2xl border border-cyan-500/30 w-full max-w-lg transition-transform hover:scale-105 duration-500">
+                        <img src="img/Prompt.webp" alt="AI Security" class="rounded-xl shadow-2xl border border-cyan-500/30 w-full max-w-lg transition-transform hover:scale-105 duration-500">
                         <!-- Tech decoration -->
                         <div class="absolute -right-4 -bottom-4 text-9xl font-black text-slate-800 opacity-50 z-[-1] select-none">AI</div>
                     </div>
@@ -653,7 +653,7 @@
                         </div>
                     </div>
                     <div class="relative flex items-center justify-center">
-                        <img src="img/Prompt2.png" alt="Vulnerability Management" class="rounded-xl shadow-2xl border border-indigo-500/30 w-full max-w-lg transition-transform hover:scale-105 duration-500">
+                        <img src="img/Prompt2.webp" alt="Vulnerability Management" class="rounded-xl shadow-2xl border border-indigo-500/30 w-full max-w-lg transition-transform hover:scale-105 duration-500">
                         <div class="absolute -right-4 -bottom-4 text-9xl font-black text-slate-800 opacity-50 z-[-1] select-none">VULN</div>
                     </div>
                 </div>
@@ -672,7 +672,7 @@
                         </div>
                     </div>
                     <div class="relative flex items-center justify-center">
-                        <img src="img/tab3.png" alt="Cloud Security" class="rounded-xl shadow-2xl border border-sky-500/30 w-full max-w-lg transition-transform hover:scale-105 duration-500">
+                        <img src="img/tab3.webp" alt="Cloud Security" class="rounded-xl shadow-2xl border border-sky-500/30 w-full max-w-lg transition-transform hover:scale-105 duration-500">
                         <div class="absolute -right-4 -bottom-4 text-9xl font-black text-slate-800 opacity-50 z-[-1] select-none">CLOUD</div>
                     </div>
                 </div>
@@ -691,7 +691,7 @@
                         </div>
                     </div>
                     <div class="relative flex items-center justify-center">
-                        <img src="img/tab4.png" alt="OT Security" class="rounded-xl shadow-2xl border border-orange-500/30 w-full max-w-lg transition-transform hover:scale-105 duration-500">
+                        <img src="img/tab4.webp" alt="OT Security" class="rounded-xl shadow-2xl border border-orange-500/30 w-full max-w-lg transition-transform hover:scale-105 duration-500">
                         <div class="absolute -right-4 -bottom-4 text-9xl font-black text-slate-800 opacity-50 z-[-1] select-none">OT</div>
                     </div>
                 </div>
@@ -798,7 +798,7 @@
         <!-- ############################################################ -->
         <!-- Slide 3: Partner -->
         <section class="h-screen w-full snap-center relative flex items-center justify-center bg-slate-50 text-slate-800">
-            <div class="absolute inset-0 z-0 opacity-10" style="background-image: url('img/network_bg.png'); background-size: cover;"></div>
+            <div class="absolute inset-0 z-0 opacity-10" style="background-image: url('img/network_bg.webp'); background-size: cover;"></div>
             <div class="slide-content max-w-7xl mx-auto px-6 w-full relative z-10">
                 <div class="text-center max-w-3xl mx-auto mb-16 relative">
                     <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_w51pcehl.json" background="transparent" speed="1" style="width: 200px; height: 100px; margin: 0 auto;" loop autoplay></lottie-player>
@@ -1007,7 +1007,7 @@
         <section class="h-screen w-full snap-center relative flex items-center justify-center bg-slate-900 text-white overflow-hidden">
             <!-- Background Image & Overlay -->
             <div class="absolute inset-0 z-0">
-                <img src="img/sectores.jpg" class="w-full h-full object-cover opacity-40 mix-blend-luminosity" alt="Futuristic Connection">
+                <img src="img/sectores.webp" class="w-full h-full object-cover opacity-40 mix-blend-luminosity" alt="Futuristic Connection">
                 <div class="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-900/80 to-slate-900"></div>
                 <!-- Animated Grid Overlay -->
                 <div class="absolute inset-0 opacity-20" style="background-image: linear-gradient(rgba(6, 182, 212, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(6, 182, 212, 0.1) 1px, transparent 1px); background-size: 50px 50px;"></div>
@@ -1174,7 +1174,7 @@
 
                     <!-- Tenable One Logo GIGANTE -->
                     <div class="bg-white/10 backdrop-blur-xl p-10 rounded-[2.5rem] border border-white/20 hover:scale-110 transition-all duration-700 shadow-[0_0_80px_rgba(255,255,255,0.05)] hover:border-white/40">
-                        <img src="img/Tenable_One_Logo.jpg" class="h-32 w-auto mix-blend-screen filter brightness-110 contrast-125" alt="Tenable Logo">
+                        <img src="img/Tenable_One_Logo.webp" class="h-32 w-auto mix-blend-screen filter brightness-110 contrast-125" alt="Tenable Logo">
                     </div>
                 </div>
 

@@ -11,6 +11,6 @@
 
     <!-- Tenable Logo -->
     <div class="h-10 px-4 bg-white rounded-lg flex items-center justify-center">
-        <img src="img/Tenable_One_Logo.jpg" alt="Tenable One" class="h-8 w-auto object-contain">
+        <img src="img/Tenable_One_Logo.webp" alt="Tenable One" class="h-8 w-auto object-contain">
     </div>
 </div>

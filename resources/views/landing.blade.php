@@ -25,9 +25,9 @@
                         "display": ["Inter", "sans-serif"]
                     },
                     backgroundImage: {
-                        'hero-pattern': "url('img/shield_bg.jpg')",
+                        'hero-pattern': "url('img/shield_bg.webp')",
                         /* User provided shield image */
-                        'network-pattern': "url('img/network_bg.jpg')",
+                        'network-pattern': "url('img/network_bg.webp')",
                         /* User provided map image */
                     }
                 },
@@ -229,7 +229,7 @@
 
         <section class="animate-on-scroll py-24 bg-slate-50 relative overflow-hidden" id="partner">
             <!-- Use the user's map/network image as faint background here if appropriate, or just keep it clean -->
-            <div class="absolute inset-0 z-0 opacity-5 pointer-events-none" style="background-image: url('img/network_bg.jpg'); background-size: cover;"></div>
+            <div class="absolute inset-0 z-0 opacity-5 pointer-events-none" style="background-image: url('img/network_bg.webp'); background-size: cover;"></div>
 
             <div class="max-w-7xl mx-auto px-6 relative z-10">
                 <div class="text-center max-w-3xl mx-auto mb-20">
@@ -442,7 +442,7 @@
             <div class="col-span-1 lg:col-span-1">
                 <div class="flex items-center gap-3 mb-6">
                     <!-- Footer Logo -->
-                    <img src="img/sit_logo.png" alt="SIT Logo" class="h-8 w-auto">
+                    <img src="img/sit_logo.webp" alt="SIT Logo" class="h-8 w-auto">
                     <h2 class="text-xl font-black tracking-tighter text-slate-900 uppercase">SIT</h2>
                 </div>
                 <p class="text-slate-500 text-sm leading-relaxed mb-8">Especialistas en sistemas integrados de tecnología y ciberseguridad avanzada para el sector bancario.</p>
