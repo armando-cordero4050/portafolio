@@ -70,8 +70,8 @@
 <body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden selection:bg-blue-200 selection:text-blue-900">
 
     <!-- Floating Navigation (New Design) -->
-    <div class="fixed top-6 left-0 right-0 z-50 flex justify-center px-4">
-        <nav class="glass-nav rounded-full px-8 py-4 flex items-center justify-between gap-8 xs:gap-12 transition-all duration-300 hover:scale-[1.02] hover:shadow-xl">
+    <div class="fixed top-4 md:top-6 left-0 right-0 z-50 flex justify-center px-4">
+        <nav class="glass-nav rounded-full px-4 md:px-8 py-3 md:py-4 flex items-center justify-between w-full max-w-7xl transition-all duration-300 hover:scale-[1.01] hover:shadow-xl">
             <div class="flex items-center gap-3 cursor-pointer" onclick="window.scrollTo(0,0)">
                 <!-- SIT Premium Logo (Sincronizado) -->
                 <div class="h-10 w-10 bg-white rounded-lg flex items-center justify-center shadow-md border-2 border-primary relative">
@@ -108,16 +108,19 @@
 
             <div class="relative z-10 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center pt-20">
                 <!-- Text Content -->
-                <div class="text-center lg:text-left">
-                    <div class="animate-on-scroll inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-bold uppercase tracking-widest mb-8 backdrop-blur-md hover:bg-blue-500/20 transition-colors cursor-default">
-                        <span class="flex h-2 w-2 rounded-full bg-secondary animate-pulse"></span>
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-primary text-[10px] md:text-xs font-bold uppercase tracking-widest mb-6 animate-bounce">
+                        <span class="relative flex h-2 w-2">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                        </span>
                         Alianza Estratégica Tenable
                     </div>
-                    <h1 class="animate-on-scroll delay-100 text-5xl md:text-7xl font-black leading-tight tracking-tight text-white mb-6">
-                        Ciberseguridad Proactiva con <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400 text-glow">Tenable One</span>
+                    <h1 class="text-4xl md:text-5xl lg:text-7xl font-black text-white mb-6 leading-[1.1] tracking-tight">
+                        Ciberseguridad Proactiva con <span class="text-glow text-primary">Tenable One</span>
                     </h1>
-                    <p class="animate-on-scroll delay-200 text-xl text-slate-400 mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">
-                        Como socio estratégico de Tenable, <strong>SIT</strong> ofrece la plataforma de exposición cibernética líder para consolidar su seguridad y reducir riesgos antes de que ocurran.
+                    <p class="text-base md:text-lg lg:text-xl text-slate-400 mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0">
+                        Como socio estratégico de Tenable, SIT ofrece la plataforma de exposición cibernética líder para consolidar su seguridad y reducir riesgos antes de que ocurran.
                     </p>
                     <!-- Buttons Removed as requested -->
                 </div>
@@ -301,7 +304,7 @@
                                 <h4 class="text-xl font-bold">Respaldo Técnico Garantizado</h4>
                             </div>
                             <p class="text-slate-300 mb-8 leading-relaxed">Nuestro equipo no solo provee licencias; construye arquitecturas de defensa resilientes basadas en estándares internacionales de banca.</p>
-                            <ul class="space-y-3">
+                            <ul class="space-y-3 mb-8">
                                 <li class="flex items-center gap-2 text-sm">
                                     <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
                                     Consultoría Técnica Especializada
@@ -311,6 +314,16 @@
                                     Gestión de Brechas de Seguridad
                                 </li>
                             </ul>
+                            <div class="flex flex-col sm:flex-row items-center gap-4 lg:justify-start">
+                                <a class="w-full sm:w-auto px-6 py-3 bg-primary hover:bg-blue-600 text-white font-bold rounded-full transition-all shadow-lg shadow-blue-500/25 flex items-center justify-center gap-2 group" href="#partner">
+                                    Descubrir Más
+                                    <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                                </a>
+                                <a class="w-full sm:w-auto px-6 py-3 bg-white/5 hover:bg-white/10 text-white font-bold rounded-full border border-white/10 transition-all flex items-center justify-center gap-2" href="/presentacion">
+                                    <span class="material-symbols-outlined">present_to_all</span>
+                                    Presentación
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>

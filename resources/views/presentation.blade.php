@@ -50,7 +50,14 @@
 
         body {
             background-color: #0f172a;
-            overflow: hidden;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        @media (min-width: 1024px) {
+            body {
+                overflow: hidden;
+            }
         }
 
         .slide-content {
@@ -157,7 +164,7 @@
         <!-- INICIO: SLIDE 1 - HERO / PANTALLA PRINCIPAL                  -->
         <!-- ############################################################ -->
         <!-- Slide 1: Hero (Hexagon Network Design) -->
-        <section id="slide-hero" class="h-screen w-full snap-center relative flex items-center justify-center overflow-hidden bg-dark-bg text-white">
+        <section id="slide-hero" class="min-h-screen lg:h-screen w-full snap-center relative flex items-center justify-center overflow-hidden bg-dark-bg text-white py-20 lg:py-0">
             <!-- Dynamic Background (Restored Shield BG + Particles) -->
             <div class="absolute inset-0 z-0">
                 <div class="absolute inset-0 bg-hero-pattern bg-cover bg-center opacity-40"></div>
@@ -173,23 +180,23 @@
 
                     <div class="relative">
                         <div class="absolute -left-4 -top-4 w-20 h-20 bg-blue-500/20 blur-3xl rounded-full"></div>
-                        <h1 class="text-5xl lg:text-7xl font-black text-white mb-6 tracking-tight leading-[1.1] drop-shadow-2xl">
+                        <h1 class="text-4xl md:text-5xl lg:text-7xl font-black text-white mb-6 tracking-tight leading-[1.1] drop-shadow-2xl text-center lg:text-left">
                             Ciberseguridad <br />
                             <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 via-blue-400 to-indigo-400 animate-pulse drop-shadow-lg" style="text-shadow: 0 0 30px rgba(6,182,212,0.5);">Proactiva</span>
                         </h1>
                     </div>
 
-                    <h2 class="text-2xl font-light text-slate-300 mb-8 flex items-center gap-3">
-                        con <strong class="text-white font-bold text-3xl">Tenable One</strong>
+                    <h2 class="text-xl md:text-2xl font-light text-slate-300 mb-8 flex items-center justify-center lg:justify-start gap-3">
+                        con <strong class="text-white font-bold text-2xl md:text-3xl">Tenable One</strong>
                     </h2>
 
-                    <p class="text-lg text-slate-400 leading-relaxed max-w-md border-l-4 border-cyan-500 pl-6 py-2 bg-gradient-to-r from-cyan-900/10 to-transparent">
+                    <p class="text-base md:text-lg text-slate-400 leading-relaxed max-w-md mx-auto lg:mx-0 border-l-4 border-cyan-500 pl-6 py-2 bg-gradient-to-r from-cyan-900/10 to-transparent text-center lg:text-left">
                         Unificamos la visibilidad de activos, vulnerabilidades y amenazas en una sola plataforma de exposición.
                     </p>
                 </div>
 
                 <!-- Right Column: Hexagon Network (Exploded & Modern) -->
-                <div class="lg:col-span-7 h-[700px] relative flex items-center justify-center perspective-[2000px]">
+                <div class="lg:col-span-7 h-[400px] md:h-[600px] lg:h-[700px] relative flex items-center justify-center perspective-[2000px] scale-[0.6] md:scale-[0.8] lg:scale-100 mt-12 lg:mt-0">
                     <!-- 3D Inclined Plane Container -->
                     <div class="relative w-[650px] h-[650px] flex items-center justify-center transform transition-transform duration-700 hover:rotate-x-12 hover:rotate-y-12" style="transform-style: preserve-3d;">
 
@@ -302,22 +309,22 @@
         <!-- INICIO: SLIDE 2 - SECTOR BANCA (FONDO CLARO)                 -->
         <!-- ############################################################ -->
         <!-- Slide 2: Banca (Light) -->
-        <section class="h-screen w-full snap-center relative flex items-center bg-white text-slate-800 overflow-hidden">
+        <section class="min-h-screen lg:h-screen w-full snap-center relative flex items-center bg-white text-slate-800 overflow-hidden py-16 lg:py-0">
             <!-- Full Height Layout -->
             <div class="w-full h-full grid grid-cols-1 lg:grid-cols-2">
                 <!-- Left Content -->
                 <div class="flex flex-col justify-center px-12 lg:pl-24 lg:pr-12 relative z-20">
                     <div class="slide-content">
                         <div class="flex items-center gap-4 mb-4">
-                            <h2 class="text-4xl lg:text-5xl font-extrabold text-slate-900">Seguridad para Instituciones Financieras</h2>
+                            <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 text-center lg:text-left">Seguridad para Instituciones Financieras</h2>
 
                         </div>
 
-                        <p class="text-xl text-slate-600 leading-relaxed mb-8 border-l-4 border-primary pl-6">
+                        <p class="text-lg md:text-xl text-slate-600 leading-relaxed mb-8 border-l-4 border-primary pl-6 text-center lg:text-left mx-auto lg:mx-0 max-w-2xl">
                             Protegemos los activos más críticos del sector bancario mediante soluciones diseñadas para el estricto cumplimiento normativo y la resiliencia operativa.
                         </p>
 
-                        <div class="grid grid-cols-4 gap-4 mb-8">
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                             <div class="compliance-badge group hover:border-blue-200">
                                 <span class="material-symbols-outlined text-primary mb-2">gavel</span>
                                 <span class="text-[10px] font-black uppercase text-slate-400 group-hover:text-primary">FFIEC</span>
@@ -364,7 +371,7 @@
                 <div class="relative h-full w-full">
                     <div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent z-10"></div>
                     <!-- Mask Image: Fade left edge to transparent so it blends with white background -->
-                    <img src="img/banca.webp" alt="Banca" class="h-full w-full object-cover" style="mask-image: linear-gradient(to right, transparent 5%, black 40%); -webkit-mask-image: linear-gradient(to right, transparent 5%, black 40%);">
+                    <img src="img/banca.webp" alt="Banca" class="h-64 md:h-[400px] lg:h-full w-full object-cover" style="mask-image: linear-gradient(to right, transparent 5%, black 40%); -webkit-mask-image: linear-gradient(to right, transparent 5% , black 40%);">
                 </div>
             </div>
         </section>
@@ -373,7 +380,7 @@
         <!-- INICIO: SLIDE 2.5 - TECNOLOGÍA Y ENTREGABLES (DISEÑO LIMPIO) -->
         <!-- ############################################################ -->
         <!-- Slide 2.5: Tecnología de Punta y Entregables Estratégicos -->
-        <section class="h-screen w-full snap-center relative flex items-center bg-white text-slate-800 overflow-hidden">
+        <section class="min-h-screen lg:h-screen w-full snap-center relative flex items-center bg-white text-slate-800 overflow-hidden py-16 lg:py-0">
             <div class="w-full h-full grid grid-cols-1 lg:grid-cols-2">
                 <!-- Left: Visual Content (crm.webp) y Entregables Clave -->
                 <div class="relative h-full w-full order-last lg:order-first bg-slate-50 flex flex-col items-center justify-center p-8 lg:p-20">
@@ -412,16 +419,16 @@
                     <div class="slide-content">
 
 
-                        <h2 class="text-4xl lg:text-5xl font-black text-slate-900 mb-6 leading-tight tracking-tight">
-                            Tecnología de Punta y <br>Entregables Estratégicos
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 mb-6 leading-tight tracking-tight text-center lg:text-left">
+                            Tecnología de Punta y <br class="hidden lg:block">Entregables Estratégicos
                         </h2>
 
-                        <p class="text-xl text-slate-600 mb-10 leading-relaxed border-l-4 border-indigo-600 pl-6">
+                        <p class="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed border-l-4 border-indigo-600 pl-6 text-center lg:text-left mx-auto lg:mx-0">
                             Implementamos la suite <strong class="text-indigo-600">Tenable One</strong> para una cobertura total, garantizando que cada hallazgo se traduzca en inteligencia accionable.
                         </p>
 
                         <div class="space-y-4 mb-10">
-                            <h3 class="text-xs font-black uppercase text-slate-400 tracking-widest mb-4">Stack Tecnológico Aplicado</h3>
+                            <h3 class="text-xs font-black uppercase text-slate-400 tracking-widest mb-4 text-center lg:text-left">Stack Tecnológico Aplicado</h3>
                             <div class="flex flex-col sm:flex-row gap-4">
                                 <div class="flex-1 flex items-center gap-4 p-4 rounded-xl bg-slate-50 border border-slate-100">
                                     <div class="w-10 h-10 bg-indigo-100 text-indigo-600 rounded-lg flex items-center justify-center">
@@ -452,7 +459,7 @@
         <!-- INICIO: SLIDE 2.6 - GESTIÓN DE EXPOSICIÓN (RADAR)            -->
         <!-- ############################################################ -->
         <!-- Slide 2.6: Exposure Management (Premium Radar) -->
-        <section class="h-screen w-full snap-center relative flex items-center bg-[#050B14] text-white overflow-hidden">
+        <section class="min-h-screen lg:h-screen w-full snap-center relative flex items-center bg-[#050B14] text-white overflow-hidden py-16 lg:py-0">
 
             <!-- Animated Infinite Grid Background -->
             <div class="absolute inset-0 bg-slate-900 z-0"></div>
@@ -513,11 +520,11 @@
                         Gestión de Exposición
                     </div>
 
-                    <h2 class="text-4xl lg:text-5xl font-extrabold mb-8 leading-tight tracking-tight text-white drop-shadow-xl">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-8 leading-tight tracking-tight text-white drop-shadow-xl text-center lg:text-left">
                         Mitigue los Riesgos<br>del Negocio
                     </h2>
 
-                    <p class="text-xl text-slate-400 mb-12 leading-relaxed max-w-xl border-l-4 border-cyan-500 pl-6">
+                    <p class="text-lg md:text-xl text-slate-400 mb-12 leading-relaxed max-w-xl mx-auto lg:mx-0 border-l-4 border-cyan-500 pl-6 text-center lg:text-left">
                         Obtenga <strong class="text-white">visibilidad unificada</strong> y contexto de negocio para priorizar lo que realmente importa en su superficie de ataque.
                     </p>
 
@@ -554,7 +561,7 @@
                 </div>
 
                 <!-- Right: Visual (Radar HUD) -->
-                <div class="lg:w-1/2 flex items-center justify-center relative perspective-[1000px]">
+                <div class="lg:w-1/2 flex items-center justify-center relative perspective-[1000px] scale-[0.6] md:scale-[0.8] lg:scale-100">
                     <!-- Radar Container -->
                     <div class="relative w-[500px] h-[500px] flex items-center justify-center transform rotateX(10deg)">
 
@@ -602,8 +609,8 @@
         <!-- INICIO: SLIDE 2.7 - CAPACIDADES (TABS INTERACTIVOS)          -->
         <!-- ############################################################ -->
         <!-- Slide 2.7: Capabilities Tabs -->
-        <section class="h-screen w-full snap-center relative flex items-center justify-center bg-slate-950 text-white overflow-hidden">
-            <div class="slide-content max-w-7xl mx-auto px-6 w-full h-[85vh] flex flex-col pt-12">
+        <section class="min-h-screen lg:h-screen w-full snap-center relative flex items-center justify-center bg-slate-950 text-white overflow-hidden py-16 lg:py-0">
+            <div class="slide-content max-w-7xl mx-auto px-6 w-full min-h-[85vh] lg:h-[85vh] flex flex-col pt-12">
 
                 <!-- Tabs Header -->
                 <div class="flex flex-wrap justify-center border-b border-slate-800 mb-8 overflow-x-auto no-scrollbar gap-2 shrink-0">
@@ -617,8 +624,8 @@
                 <!-- Tab Content: AI -->
                 <div id="tab-ai" class="tab-content w-full flex-1 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <div>
-                        <h2 class="text-4xl font-extrabold mb-2 text-cyan-400">Cierre la exposición de la IA</h2>
-                        <h3 class="text-xl text-slate-400 mb-8">Con la plataforma de gestión de exposición impulsada por IA líder en el mundo.</h3>
+                        <h2 class="text-3xl md:text-4xl font-extrabold mb-2 text-cyan-400 text-center lg:text-left">Cierre la exposición de la IA</h2>
+                        <h3 class="text-lg md:text-xl text-slate-400 mb-8 text-center lg:text-left">Con la plataforma de gestión de exposición impulsada por IA líder en el mundo.</h3>
 
                         <div class="space-y-8">
                             <div class="border-l-4 border-cyan-500 pl-6">
@@ -724,7 +731,7 @@
         <!-- INICIO: SLIDE 2.8 - SEGURIDAD NUBE HÍBRIDA                   -->
         <!-- ############################################################ -->
         <!-- Slide 2.8: Hybrid Cloud Security -->
-        <section class="h-screen w-full snap-center relative flex items-center justify-center bg-white text-slate-800">
+        <section class="min-h-screen lg:h-screen w-full snap-center relative flex items-center justify-center bg-white text-slate-800 py-16 lg:py-0">
             <!-- Subtle background mesh -->
             <div class="absolute inset-0 z-0 opacity-30" style="background-image: radial-gradient(#cbd5e1 1px, transparent 1px); background-size: 30px 30px;"></div>
 
@@ -797,7 +804,7 @@
         <!-- INICIO: SLIDE 3 - VALOR COMO PARTNER (PROCESO)               -->
         <!-- ############################################################ -->
         <!-- Slide 3: Partner -->
-        <section class="h-screen w-full snap-center relative flex items-center justify-center bg-slate-50 text-slate-800">
+        <section class="min-h-screen lg:h-screen w-full snap-center relative flex items-center justify-center bg-slate-50 text-slate-800 py-16 lg:py-0">
             <div class="absolute inset-0 z-0 opacity-10" style="background-image: url('img/network_bg.webp'); background-size: cover;"></div>
             <div class="slide-content max-w-7xl mx-auto px-6 w-full relative z-10">
                 <div class="text-center max-w-3xl mx-auto mb-16 relative">
@@ -846,7 +853,7 @@
         <!-- INICIO: SLIDE 4 - NOC 24/7 (SOPORTE ESPECIALIZADO)           -->
         <!-- ############################################################ -->
         <!-- Slide 4: NOC 24/7 (Premium Isometric) -->
-        <section class="h-screen w-full snap-center relative flex items-center bg-[#0B1120] text-white overflow-hidden">
+        <section class="min-h-screen lg:h-screen w-full snap-center relative flex items-center bg-[#0B1120] text-white overflow-hidden py-16 lg:py-0">
             <!-- Background Matrix Effect -->
             <div class="absolute inset-0 z-0 opacity-20" style="background-image: radial-gradient(#1e293b 1px, transparent 1px); background-size: 30px 30px;"></div>
             <div class="absolute inset-0 bg-gradient-to-r from-[#0B1120] via-transparent to-[#0B1120]/80 z-0"></div>
@@ -942,7 +949,7 @@
                 </div>
 
                 <!-- Right: Isometric CSS Animation -->
-                <div class="lg:w-1/2 flex items-center justify-center h-[500px] perspective-[2000px]">
+                <div class="lg:w-1/2 flex items-center justify-center h-[300px] md:h-[500px] perspective-[2000px] scale-[0.5] md:scale-[0.8] lg:scale-100">
 
                     <!-- Isometric Scene Container -->
                     <div class="relative w-full h-full flex items-center justify-center" style="transform: rotateX(60deg) rotateZ(-45deg) scale(0.8);">
@@ -1004,7 +1011,7 @@
         <!-- INICIO: SLIDE 5 - SECTORES QUE PROTEGEMOS                    -->
         <!-- ############################################################ -->
         <!-- Slide 5: Sectores (Impactful Dark Mode) -->
-        <section class="h-screen w-full snap-center relative flex items-center justify-center bg-slate-900 text-white overflow-hidden">
+        <section class="min-h-screen lg:h-screen w-full snap-center relative flex items-center justify-center bg-slate-900 text-white overflow-hidden py-16 lg:py-0">
             <!-- Background Image & Overlay -->
             <div class="absolute inset-0 z-0">
                 <img src="img/sectores.webp" class="w-full h-full object-cover opacity-40 mix-blend-luminosity" alt="Futuristic Connection">
@@ -1077,7 +1084,7 @@
         <!-- INICIO: SLIDE 6 - SOLUCIONES DE PRÓXIMA GENERACIÓN           -->
         <!-- ############################################################ -->
         <!-- Slide 6: Soluciones (Grid) -->
-        <section class="h-screen w-full snap-center relative flex items-center justify-center bg-white text-slate-800">
+        <section class="min-h-screen lg:h-screen w-full snap-center relative flex items-center justify-center bg-white text-slate-800 py-16 lg:py-0">
             <div class="slide-content max-w-7xl mx-auto px-6 w-full">
                 <div class="text-center mb-12">
                     <h2 class="text-4xl font-extrabold text-slate-900 mb-4">Soluciones de Próxima Generación</h2>
@@ -1153,7 +1160,7 @@
         <!-- INICIO: SLIDE FINAL - LLAMADO A LA ACCIÓN (CTA)              -->
         <!-- ############################################################ -->
         <!-- Final Slide: CTA -->
-        <section class="h-screen w-full snap-center relative flex items-center justify-center bg-slate-900 text-white overflow-hidden">
+        <section class="min-h-screen lg:h-screen w-full snap-center relative flex items-center justify-center bg-slate-900 text-white overflow-hidden py-16 lg:py-0">
             <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-slate-800 to-[#020617] z-0"></div>
             <!-- Animated Grid -->
             <div class="absolute inset-0 opacity-10" style="background-image: linear-gradient(#06b6d4 1px, transparent 1px), linear-gradient(90deg, #06b6d4 1px, transparent 1px); background-size: 50px 50px;"></div>
@@ -1163,22 +1170,22 @@
                 <div class="flex flex-col md:flex-row items-center gap-12 md:gap-24 animate-fade-in-up">
                     <!-- SIT Premium Logo GIGANTE (Estilo Brand Pill sincronizado) -->
                     <div class="relative group">
-                        <div class="h-56 w-56 bg-white rounded-[3rem] flex items-center justify-center border-4 border-primary shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-700 group-hover:scale-110 group-hover:rotate-3 relative overflow-hidden">
-                            <span class="font-black text-8xl text-primary tracking-tighter" style="font-family: 'Inter', sans-serif;">SIT</span>
+                        <div class="h-40 w-40 md:h-56 md:w-56 bg-white rounded-[2rem] md:rounded-[3rem] flex items-center justify-center border-4 border-primary shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-700 group-hover:scale-110 group-hover:rotate-3 relative overflow-hidden">
+                            <span class="font-black text-6xl md:text-8xl text-primary tracking-tighter" style="font-family: 'Inter', sans-serif;">SIT</span>
                             <!-- Detalle de punto decorativo sincronizado -->
-                            <div class="absolute top-4 right-4 w-6 h-6 bg-secondary rounded-full border-4 border-white"></div>
+                            <div class="absolute top-2 right-2 md:top-4 md:right-4 w-4 h-4 md:w-6 md:h-6 bg-secondary rounded-full border-4 border-white"></div>
                         </div>
                     </div>
 
 
 
                     <!-- Tenable One Logo GIGANTE -->
-                    <div class="bg-white/10 backdrop-blur-xl p-10 rounded-[2.5rem] border border-white/20 hover:scale-110 transition-all duration-700 shadow-[0_0_80px_rgba(255,255,255,0.05)] hover:border-white/40">
-                        <img src="img/Tenable_One_Logo.webp" class="h-32 w-auto mix-blend-screen filter brightness-110 contrast-125" alt="Tenable Logo">
+                    <div class="bg-white/10 backdrop-blur-xl p-6 md:p-10 rounded-[1.5rem] md:rounded-[2.5rem] border border-white/20 hover:scale-110 transition-all duration-700 shadow-[0_0_80px_rgba(255,255,255,0.05)] hover:border-white/40">
+                        <img src="img/Tenable_One_Logo.webp" class="h-20 md:h-32 w-auto mix-blend-screen filter brightness-110 contrast-125" alt="Tenable Logo">
                     </div>
                 </div>
 
-                <h2 class="text-5xl md:text-7xl font-black leading-tight bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-white to-purple-400 drop-shadow-2xl max-w-5xl mx-auto">
+                <h2 class="text-3xl md:text-5xl lg:text-7xl font-black leading-tight bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-white to-purple-400 drop-shadow-2xl max-w-5xl mx-auto px-4">
                     ¿Estás listo para proteger tu organización?
                 </h2>
 
