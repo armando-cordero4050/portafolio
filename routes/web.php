@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('landing');
 });
 
-Route::get('{any?}', function() {
+Route::get('/presentacion', function () {
+    return view('presentation');
+});
+
+Route::get('{any?}', function () {
     return view('application');
 })->where('any', '.*');
