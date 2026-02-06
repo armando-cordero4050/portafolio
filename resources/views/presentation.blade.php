@@ -135,20 +135,21 @@
     <!-- Navigation Overlay -->
     <div id="fixed-nav-logo" class="fixed top-6 left-6 z-50 transition-opacity duration-500 opacity-0">
         <div class="flex items-center gap-3">
-            <div class="h-12 w-16 bg-primary rounded-lg flex items-center justify-center shadow-lg border border-blue-400">
-                <span class="font-black text-xl text-white tracking-tighter" style="font-family: 'Inter', sans-serif;">SIT</span>
-                <div class="absolute w-2 h-2 bg-secondary rounded-full top-3 right-3 border border-white"></div>
+            <!-- SIT Logo (Consistent with Hero) -->
+            <div class="h-14 w-14 bg-white rounded-xl flex items-center justify-center shadow-lg border-2 border-primary relative">
+                <span class="font-black text-xl text-primary tracking-tighter" style="font-family: 'Inter', sans-serif;">SIT</span>
+                <div class="absolute -top-1 -right-1 w-3 h-3 bg-secondary rounded-full border-2 border-white"></div>
             </div>
         </div>
     </div>
 
-    <!-- Scroll Controls -->
-    <div class="fixed bottom-6 right-6 z-50 flex gap-2 mix-blend-difference">
-        <button onclick="prevSlide()" class="p-3 rounded-full bg-white/10 hover:bg-white/20 backdrop-blur-md transition-colors text-white border border-white/50">
-            <span class="material-symbols-outlined">arrow_upward</span>
+    <!-- Scroll Controls (Crystal Effect) -->
+    <div class="fixed bottom-8 right-8 z-50 flex flex-col gap-3">
+        <button onclick="prevSlide()" class="group p-4 rounded-full bg-white/5 backdrop-blur-xl border border-white/20 hover:bg-white/20 hover:border-white/40 transition-all shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] hover:shadow-[0_8px_32px_0_rgba(31,38,135,0.6)] active:scale-95">
+            <span class="material-symbols-outlined text-white opacity-70 group-hover:opacity-100 transition-opacity">keyboard_arrow_up</span>
         </button>
-        <button onclick="nextSlide()" class="p-3 rounded-full bg-primary hover:bg-blue-600 transition-colors text-white shadow-lg">
-            <span class="material-symbols-outlined">arrow_downward</span>
+        <button onclick="nextSlide()" class="group p-4 rounded-full bg-white/5 backdrop-blur-xl border border-white/20 hover:bg-white/20 hover:border-white/40 transition-all shadow-[0_8px_32px_0_rgba(31,38,135,0.37)] hover:shadow-[0_8px_32px_0_rgba(31,38,135,0.6)] active:scale-95">
+            <span class="material-symbols-outlined text-white opacity-70 group-hover:opacity-100 transition-opacity">keyboard_arrow_down</span>
         </button>
     </div>
 
@@ -305,17 +306,12 @@
                 <div class="flex flex-col justify-center px-12 lg:pl-24 lg:pr-12 relative z-20">
                     <div class="slide-content">
                         <div class="flex items-center gap-4 mb-4">
-                            <h2 class="text-4xl lg:text-5xl font-extrabold text-slate-900">Seguridad Financiera</h2>
+                            <h2 class="text-4xl lg:text-5xl font-extrabold text-slate-900">Seguridad para Instituciones Financieras</h2>
                             <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_V9t630.json" background="transparent" speed="1" style="width: 80px; height: 80px;" loop autoplay></lottie-player>
                         </div>
 
-                        <h3 class="text-xl text-primary font-bold mb-6">Protección para Instituciones Bancarias</h3>
-
-                        <p class="text-lg text-slate-600 leading-relaxed mb-6">
-                            En un entorno financiero cada vez más digital, las amenazas evolucionan rápidamente. <strong>SIT</strong> proporciona una arquitectura de ciberseguridad integral que no solo cumple con las normativas locales e internacionales (FFIEC, NIST), sino que anticipa ataques mediante inteligencia artificial y análisis comportamental.
-                        </p>
-                        <p class="text-lg text-slate-600 leading-relaxed mb-8">
-                            Nuestra solución unificada permite visibilidad total sobre activos transaccionales, cajeros (ATMs) y banca en la nube.
+                        <p class="text-xl text-slate-600 leading-relaxed mb-8 border-l-4 border-primary pl-6">
+                            Protegemos los activos más críticos del sector bancario mediante soluciones diseñadas para el estricto cumplimiento normativo y la resiliencia operativa.
                         </p>
 
                         <div class="grid grid-cols-4 gap-4 mb-8">
@@ -333,7 +329,29 @@
                             </div>
                             <div class="compliance-badge group hover:border-green-200">
                                 <span class="material-symbols-outlined text-secondary mb-2">verified</span>
-                                <span class="text-[10px] font-black uppercase text-slate-400 group-hover:text-secondary">ISO</span>
+                                <span class="text-[10px] font-black uppercase text-slate-400 group-hover:text-secondary">ISO 27001</span>
+                            </div>
+                        </div>
+
+                        <!-- Moved Cards (Integrated) -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100 shadow-sm">
+                                <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center text-white shrink-0 shadow-lg shadow-blue-500/30">
+                                    <span class="material-symbols-outlined text-xl">verified_user</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-sm font-bold text-slate-900 leading-tight">Cumplimiento</h3>
+                                    <p class="text-[10px] text-slate-500">Reportes PCI DSS.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-50 border border-slate-100 shadow-sm">
+                                <div class="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center text-white shrink-0 shadow-lg shadow-green-500/30">
+                                    <span class="material-symbols-outlined text-xl">account_balance</span>
+                                </div>
+                                <div>
+                                    <h3 class="text-sm font-bold text-slate-900 leading-tight">Activos Críticos</h3>
+                                    <p class="text-[10px] text-slate-500">Monitoreo 24/7.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -344,26 +362,78 @@
                     <div class="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent z-10"></div>
                     <!-- Mask Image: Fade left edge to transparent so it blends with white background -->
                     <img src="img/banca.png" alt="Banca" class="h-full w-full object-cover" style="mask-image: linear-gradient(to right, transparent 5%, black 40%); -webkit-mask-image: linear-gradient(to right, transparent 5%, black 40%);">
+                </div>
+            </div>
+        </section>
 
-                    <!-- Floating Cards -->
-                    <div class="absolute bottom-12 right-12 z-20 flex flex-col gap-4 max-w-md slide-content" style="transition-delay: 200ms;">
-                        <div class="flex gap-4 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-white/10 shadow-2xl">
-                            <div class="w-12 h-12 bg-blue-500 rounded-lg flex items-center justify-center text-white shrink-0">
-                                <span class="material-symbols-outlined text-2xl">verified_user</span>
+        <!-- Slide 2.5: Banca Deep Dive (Products & Reports) -->
+        <section class="h-screen w-full snap-center relative flex items-center justify-center bg-slate-50 text-slate-800 overflow-hidden">
+            <!-- Background Texture -->
+            <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(#2563EB 0.5px, transparent 0.5px); background-size: 20px 20px;"></div>
+
+            <div class="slide-content max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+
+                <!-- Left: Tenable Stack -->
+                <div>
+                    <h2 class="text-3xl lg:text-4xl font-extrabold text-slate-900 mb-6">Tecnología de Punta y Entregables Estratégicos</h2>
+                    <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                        Implementamos la suite <strong class="text-primary">Tenable One</strong> para una cobertura total, garantizando que cada hallazgo se traduzca en inteligencia accionable.
+                    </p>
+
+                    <h3 class="text-sm font-black uppercase text-slate-400 tracking-widest mb-4">Stack Tecnológico Aplicado</h3>
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-slate-100">
+                            <div class="w-10 h-10 bg-indigo-500/10 rounded-lg flex items-center justify-center text-indigo-600">
+                                <span class="material-symbols-outlined">hub</span>
                             </div>
                             <div>
-                                <h3 class="text-base font-bold text-white mb-1">Cumplimiento Automatizado</h3>
-                                <p class="text-xs text-slate-400">Reportes PCI DSS en tiempo real.</p>
+                                <h4 class="font-bold text-slate-900">Tenable.io & SC</h4>
+                                <p class="text-xs text-slate-500">Gestión de vulnerabilidades basada en riesgo.</p>
                             </div>
                         </div>
-                        <div class="flex gap-4 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-white/10 shadow-2xl">
-                            <div class="w-12 h-12 bg-green-500 rounded-lg flex items-center justify-center text-white shrink-0">
-                                <span class="material-symbols-outlined text-2xl">account_balance</span>
+                        <div class="flex items-center gap-4 p-4 bg-white rounded-xl shadow-sm border border-slate-100">
+                            <div class="w-10 h-10 bg-teal-500/10 rounded-lg flex items-center justify-center text-teal-600">
+                                <span class="material-symbols-outlined">fingerprint</span>
                             </div>
                             <div>
-                                <h3 class="text-base font-bold text-white mb-1">Activos Críticos</h3>
-                                <p class="text-xs text-slate-400">Monitoreo 24/7 de infraestructura.</p>
+                                <h4 class="font-bold text-slate-900">Identity Exposure</h4>
+                                <p class="text-xs text-slate-500">Seguridad para Active Directory.</p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Reports Showcase -->
+                <div class="relative">
+                    <!-- Main Image (Placeholder for Prompt) -->
+                    <div class="rounded-3xl overflow-hidden shadow-2xl border border-slate-200 relative group">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Executive Reports" class="w-full h-auto object-cover opacity-90 group-hover:scale-105 transition-transform duration-700">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 text-white">
+                            <h3 class="font-bold text-xl">Inteligencia Visual y Documentada</h3>
+                            <p class="text-sm text-slate-300">Auditoría con evidencia tangible.</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Report Types -->
+                    <div class="absolute -right-6 top-10 flex flex-col gap-4">
+                        <div class="bg-white p-3 rounded-lg shadow-xl border border-slate-100 flex items-center gap-3 w-48 hover:-translate-x-2 transition-transform">
+                            <div class="w-8 h-8 bg-blue-500 rounded-md flex items-center justify-center text-white">
+                                <span class="material-symbols-outlined text-sm">dashboard</span>
+                            </div>
+                            <span class="text-xs font-bold text-slate-700">Dashboards Ejecutivos</span>
+                        </div>
+                        <div class="bg-white p-3 rounded-lg shadow-xl border border-slate-100 flex items-center gap-3 w-48 hover:-translate-x-2 transition-transform delay-75">
+                            <div class="w-8 h-8 bg-green-600 rounded-md flex items-center justify-center text-white">
+                                <span class="material-symbols-outlined text-sm">table_view</span>
+                            </div>
+                            <span class="text-xs font-bold text-slate-700">Reportes Excel (TI)</span>
+                        </div>
+                        <div class="bg-white p-3 rounded-lg shadow-xl border border-slate-100 flex items-center gap-3 w-48 hover:-translate-x-2 transition-transform delay-150">
+                            <div class="w-8 h-8 bg-red-500 rounded-md flex items-center justify-center text-white">
+                                <span class="material-symbols-outlined text-sm">picture_as_pdf</span>
+                            </div>
+                            <span class="text-xs font-bold text-slate-700">Dictamen Técnico PDF</span>
                         </div>
                     </div>
                 </div>
@@ -376,10 +446,10 @@
             <div class="slide-content max-w-7xl mx-auto px-6 w-full relative z-10">
                 <div class="text-center max-w-3xl mx-auto mb-16 relative">
                     <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_w51pcehl.json" background="transparent" speed="1" style="width: 200px; height: 100px; margin: 0 auto;" loop autoplay></lottie-player>
-                    <h2 class="text-4xl font-extrabold text-slate-900 mb-6">Partner Estratégico</h2>
-                    <p class="text-lg text-slate-600">Metodología probada para resultados de seguridad tangibles.</p>
+                    <h2 class="text-4xl font-extrabold text-slate-900 mb-6">Nuestro Valor como Partner Estratégico</h2>
+                    <p class="text-lg text-slate-600">En SIT, consolidamos la tecnología líder con un equipo experto para garantizar una implementación sin fisuras.</p>
                 </div>
-                <!-- Content same as before -->
+
                 <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-10">
                     <div class="relative text-center px-4 group">
                         <div class="w-20 h-20 rounded-full bg-white shadow-lg mx-auto flex items-center justify-center mb-6 relative z-10 border border-slate-100 group-hover:border-primary transition-colors">
@@ -387,26 +457,30 @@
                             <div class="step-connector"></div>
                         </div>
                         <h4 class="text-lg font-bold mb-2 text-slate-900">1. Evaluación</h4>
+                        <p class="text-sm text-slate-500">Diagnóstico profundo de su estado actual de ciberseguridad y activos.</p>
                     </div>
                     <div class="relative text-center px-4 group">
                         <div class="w-20 h-20 rounded-full bg-white shadow-lg mx-auto flex items-center justify-center mb-6 relative z-10 border border-slate-100 group-hover:border-secondary transition-colors">
                             <span class="material-symbols-outlined text-3xl text-secondary">architecture</span>
                             <div class="step-connector"></div>
                         </div>
-                        <h4 class="text-lg font-bold mb-2 text-slate-900">2. Diseño</h4>
+                        <h4 class="text-lg font-bold mb-2 text-slate-900">2. Implementación</h4>
+                        <p class="text-sm text-slate-500">Configuración experta adaptada a su entorno bancario.</p>
                     </div>
                     <div class="relative text-center px-4 group">
                         <div class="w-20 h-20 rounded-full bg-white shadow-lg mx-auto flex items-center justify-center mb-6 relative z-10 border border-slate-100 group-hover:border-primary transition-colors">
                             <span class="material-symbols-outlined text-3xl text-primary">speed</span>
                             <div class="step-connector"></div>
                         </div>
-                        <h4 class="text-lg font-bold mb-2 text-slate-900">3. Implementación</h4>
+                        <h4 class="text-lg font-bold mb-2 text-slate-900">3. Optimización</h4>
+                        <p class="text-sm text-slate-500">Ajuste continuo de políticas y priorización para máxima eficiencia.</p>
                     </div>
                     <div class="relative text-center px-4 group">
                         <div class="w-20 h-20 rounded-full bg-white shadow-lg mx-auto flex items-center justify-center mb-6 relative z-10 border border-slate-100 group-hover:border-secondary transition-colors">
                             <span class="material-symbols-outlined text-3xl text-secondary">support_agent</span>
                         </div>
                         <h4 class="text-lg font-bold mb-2 text-slate-900">4. Soporte</h4>
+                        <p class="text-sm text-slate-500">Acompañamiento técnico experto y respuesta ágil 24/7.</p>
                     </div>
                 </div>
             </div>
@@ -417,31 +491,207 @@
             <!-- Content Preserved from previous iteration -->
             <div class="slide-content max-w-7xl mx-auto px-6 w-full">
                 <div class="bg-white rounded-3xl p-12 border border-slate-200 shadow-xl overflow-hidden relative">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div>
-                            <h3 class="text-3xl font-extrabold text-slate-900 mb-6">Capital Humano Certificado</h3>
+                            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-secondary/10 text-secondary text-xs font-bold uppercase mb-6">
+                                Capital Humano Certificado
+                            </div>
+                            <h3 class="text-3xl font-extrabold text-slate-900 mb-6 leading-tight">Equipo de 4 ingenieros expertos y certificados</h3>
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div class="flex items-center gap-3 bg-slate-50 p-4 rounded-xl border border-slate-100">
                                     <span class="material-symbols-outlined text-primary">workspace_premium</span>
-                                    <span class="text-xs font-bold text-slate-700">Cisco Certified</span>
+                                    <span class="text-sm font-bold text-slate-700">Cisco Certified CyberOps</span>
                                 </div>
                                 <div class="flex items-center gap-3 bg-slate-50 p-4 rounded-xl border border-slate-100">
                                     <span class="material-symbols-outlined text-primary">workspace_premium</span>
-                                    <span class="text-xs font-bold text-slate-700">Microsoft SC-200</span>
+                                    <span class="text-sm font-bold text-slate-700">CompTIA CySA+</span>
+                                </div>
+                                <div class="flex items-center gap-3 bg-slate-50 p-4 rounded-xl border border-slate-100">
+                                    <span class="material-symbols-outlined text-primary">workspace_premium</span>
+                                    <span class="text-sm font-bold text-slate-700">Microsoft SC-200</span>
+                                </div>
+                                <div class="flex items-center gap-3 bg-slate-100 p-4 rounded-xl border border-dashed border-slate-300">
+                                    <span class="material-symbols-outlined text-secondary">event_available</span>
+                                    <span class="text-sm font-bold text-slate-700">Meta 2027: ISO 27001</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-slate-900 p-8 rounded-2xl text-white">
-                            <h4 class="text-xl font-bold mb-4">Expertos en Ciberseguridad</h4>
-                            <p class="text-sm text-slate-300">Arquitecturas resilientes.</p>
+                        <div class="bg-gradient-to-br from-slate-900 to-slate-800 p-8 rounded-2xl text-white">
+                            <div class="flex items-center gap-4 mb-6">
+                                <span class="material-symbols-outlined text-4xl text-primary">verified</span>
+                                <h4 class="text-xl font-bold">Respaldo Técnico Garantizado</h4>
+                            </div>
+                            <p class="text-slate-300 mb-8 leading-relaxed">Nuestro equipo no solo provee licencias; construye arquitecturas de defensa resilientes basadas en estándares internacionales de banca.</p>
+                            <ul class="space-y-3">
+                                <li class="flex items-center gap-2 text-sm">
+                                    <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                    Consultoría Técnica Especializada
+                                </li>
+                                <li class="flex items-center gap-2 text-sm">
+                                    <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                    Gestión de Brechas de Seguridad
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Slide 5, 6, 7 (Preserved mostly, omitted for brevity in this replace but fully written in file) -->
-        <!-- I will actually write the FULL file to ensure nothing is lost -->
+        <!-- Slide 5: Sectores (Impactful Dark Mode) -->
+        <section class="h-screen w-full snap-center relative flex items-center justify-center bg-slate-900 text-white overflow-hidden">
+            <!-- Background Image & Overlay -->
+            <div class="absolute inset-0 z-0">
+                <img src="img/industrias.png" class="w-full h-full object-cover opacity-30" alt="Futuristic Connection">
+                <div class="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-900/80 to-slate-900"></div>
+                <!-- Animated Grid Overlay -->
+                <div class="absolute inset-0 opacity-20" style="background-image: linear-gradient(rgba(6, 182, 212, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(6, 182, 212, 0.1) 1px, transparent 1px); background-size: 50px 50px;"></div>
+            </div>
+
+            <div class="slide-content max-w-7xl mx-auto px-6 w-full relative z-10">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-4 tracking-tight drop-shadow-lg">Sectores que Protegemos</h2>
+                    <p class="text-slate-300 text-xl max-w-2xl mx-auto">Nuestra experiencia blinda las industrias más críticas contra amenazas avanzadas.</p>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    <!-- Banca (Added) -->
+                    <div class="group relative bg-white/5 backdrop-blur-md rounded-3xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(255,215,0,0.3)]">
+                        <div class="absolute inset-0 bg-gradient-to-br from-yellow-500/10 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div class="w-16 h-16 rounded-2xl bg-yellow-600/20 text-yellow-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-inner border border-yellow-500/30">
+                            <span class="material-symbols-outlined text-4xl">account_balance</span>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-white">BANCA</h3>
+                        <p class="text-sm text-slate-400 leading-snug">Seguridad transaccional y cumplimiento normativo.</p>
+                    </div>
+
+                    <!-- Salud -->
+                    <div class="group relative bg-white/5 backdrop-blur-md rounded-3xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(37,99,235,0.3)]">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div class="w-16 h-16 rounded-2xl bg-blue-600/20 text-blue-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-inner border border-blue-500/30">
+                            <span class="material-symbols-outlined text-4xl">medical_services</span>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-white">SALUD</h3>
+                        <p class="text-sm text-slate-400 leading-snug">Protección integral de datos sensibles de pacientes (HIPAA).</p>
+                    </div>
+
+                    <!-- Energía -->
+                    <div class="group relative bg-white/5 backdrop-blur-md rounded-3xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(13,148,136,0.3)]">
+                        <div class="absolute inset-0 bg-gradient-to-br from-teal-500/10 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div class="w-16 h-16 rounded-2xl bg-teal-600/20 text-teal-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-inner border border-teal-500/30">
+                            <span class="material-symbols-outlined text-4xl">bolt</span>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-white">ENERGÍA</h3>
+                        <p class="text-sm text-slate-400 leading-snug">Seguridad resiliente para infraestructuras operativas (OT).</p>
+                    </div>
+
+                    <!-- Educación -->
+                    <div class="group relative bg-white/5 backdrop-blur-md rounded-3xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(37,99,235,0.3)]">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div class="w-16 h-16 rounded-2xl bg-blue-600/20 text-blue-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-inner border border-blue-500/30">
+                            <span class="material-symbols-outlined text-4xl">school</span>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-white">EDUCACIÓN</h3>
+                        <p class="text-sm text-slate-400 leading-snug">Resguardo de portales académicos y datos estudiantiles.</p>
+                    </div>
+
+                    <!-- Alimentos -->
+                    <div class="group relative bg-white/5 backdrop-blur-md rounded-3xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_30px_rgba(13,148,136,0.3)]">
+                        <div class="absolute inset-0 bg-gradient-to-br from-teal-500/10 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div class="w-16 h-16 rounded-2xl bg-teal-600/20 text-teal-400 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-inner border border-teal-500/30">
+                            <span class="material-symbols-outlined text-4xl">restaurant</span>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-white">ALIMENTOS</h3>
+                        <p class="text-sm text-slate-400 leading-snug">Continuidad garantizada en cadenas de suministro críticas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: Soluciones (Grid) -->
+        <section class="h-screen w-full snap-center relative flex items-center justify-center bg-white text-slate-800">
+            <div class="slide-content max-w-7xl mx-auto px-6 w-full">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-extrabold text-slate-900 mb-4">Soluciones de Próxima Generación</h2>
+                    <p class="text-slate-600">Portafolio integral de Tenable One adaptado a la vertical financiera.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col group hover:border-primary/50 transition-colors">
+                        <div class="mb-4 flex items-center gap-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-2xl font-bold">radar</span>
+                            </div>
+                            <h3 class="text-xl font-black text-slate-900">Exposure Management</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Priorización de riesgos basada en activos críticos transaccionales. (Vulnerability Management).
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-slate-100">
+                            <span class="text-[10px] font-black uppercase text-primary tracking-widest">Activos Críticos</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col group hover:border-secondary/50 transition-colors">
+                        <div class="mb-4 flex items-center gap-4">
+                            <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-2xl font-bold">cloud_done</span>
+                            </div>
+                            <h3 class="text-xl font-black text-slate-900">Cloud Security</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Seguridad para infraestructuras de banca digital y APIs en la nube.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-slate-100">
+                            <span class="text-[10px] font-black uppercase text-secondary tracking-widest">Banca Digital</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col group hover:border-primary/50 transition-colors">
+                        <div class="mb-4 flex items-center gap-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-2xl font-bold">fingerprint</span>
+                            </div>
+                            <h3 class="text-xl font-black text-slate-900">Identity Exposure</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Protección contra ataques de Active Directory para prevenir movimientos laterales.
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-slate-100">
+                            <span class="text-[10px] font-black uppercase text-primary tracking-widest">Protección de Directorio</span>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-3xl border border-slate-200 shadow-sm flex flex-col group hover:border-secondary/50 transition-colors">
+                        <div class="mb-4 flex items-center gap-4">
+                            <div class="w-12 h-12 bg-secondary/10 rounded-xl flex items-center justify-center text-secondary group-hover:scale-110 transition-transform">
+                                <span class="material-symbols-outlined text-2xl font-bold">atm</span>
+                            </div>
+                            <h3 class="text-xl font-black text-slate-900">OT Security</h3>
+                        </div>
+                        <p class="text-sm text-slate-600 leading-relaxed mb-4">
+                            Protección de infraestructuras físicas críticas (ATM y Datacenters).
+                        </p>
+                        <div class="mt-auto pt-4 border-t border-slate-100">
+                            <span class="text-[10px] font-black uppercase text-secondary tracking-widest">Sistemas OT / ATMs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 7: CTA -->
+        <section class="h-screen w-full snap-center relative flex items-center justify-center bg-slate-900 text-white overflow-hidden">
+            <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+            <div class="slide-content max-w-4xl mx-auto px-6 text-center relative z-10">
+                <h2 class="text-4xl font-extrabold mb-6">¿Listo para asegurar su organización?</h2>
+                <p class="text-xl text-slate-400 mb-10">Transforme su estrategia reactiva en un modelo proactivo con el respaldo de SIT.</p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-primary text-white px-10 py-4 rounded-xl font-bold hover:bg-primary/90 transition-all shadow-xl shadow-primary/20">Programar Consulta Técnica</button>
+                    <button class="bg-transparent border-2 border-white/20 text-white px-10 py-4 rounded-xl font-bold hover:bg-white/10 transition-all">Ver Más Soluciones</button>
+                </div>
+            </div>
+        </section>
 
     </main>
 
